@@ -15,8 +15,8 @@ export async function POST(request: NextRequest) {
 
     // Send notification email to jjanocko@hotmail.com
     await resend.emails.send({
-      from: 'newsletter@jj-reality.com',
-      to: 'jjanocko@hotmail.com',
+      from: 'newsletter@isginvest.cz',
+      to: 'info@isginvest.cz',
       subject: 'New Newsletter Subscription',
       html: `
         <h3>New Newsletter Subscription</h3>
@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Subscribed on:</strong> ${new Date().toLocaleString()}</p>
         <hr>
-        <p><small>Sent from JJ Reality website newsletter subscription</small></p>
+        <p><small>Sent from ISG website newsletter subscription</small></p>
       `,
     });
 

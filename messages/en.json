@@ -2,44 +2,62 @@
   "navigation": {
     "home": "Home",
     "about": "About",
-    "properties": "Properties",
+    "services": "Services",
     "team": "Our Team",
     "contact": "Contact",
     "language": "Language",
     "menu": "Menu"
   },
   "hero": {
-    "headline": "Find Your Dream Home in Prague and Beyond",
-    "subheadline": "Family-run real estate company offering modern apartments, houses, and investment properties with over a decade of experience.",
-    "viewListings": "View Listings",
+    "headline": "Hello. We're ISG, Prague's No 1 Buyer's Agency for Real Estate.",
+    "subheadline": "ISG can help with all aspects of the real estate cycle, from buying to selling, financing, renovating, and managing properties.",
+    "tagline": "Owning a home is the foundation for wealth & peace of mind",
+    "viewListings": "View Our Services",
     "contactUs": "Contact Us"
   },
   "about": {
     "title": "Who We Are",
-    "description": "We are a family-run real estate company, operating since 2021, with over 10 years of combined experience in the real estate market. Our mission is to guide every client smoothly through buying, selling, or renting properties in Prague and surrounding areas, combining professionalism with a personal touch.",
+    "description": "ISG (Investment Solutions Group) is Prague's premier buyer's agency, specializing in comprehensive real estate services for English speakers. We provide expert guidance through every aspect of the real estate cycle, from acquisition to management, ensuring our clients make informed investment decisions.",
     "stats": {
-      "yearsExperienceTitle": "Years Experience",
-      "yearsExperienceDesc": "Combined expertise in Prague real estate market",
-      "establishedTitle": "Established",
-      "establishedDesc": "Family-run business since 2021",
-      "personalTouchTitle": "Personal Touch",
-      "personalTouchDesc": "Combining professionalism with family values"
+      "propertiesTitle": "Properties Under Management",
+      "propertiesDesc": "125 properties actively managed",
+      "renovationsTitle": "Renovation Projects",
+      "renovationsDesc": "55 successful renovation projects completed",
+      "expertiseTitle": "Full-Service Expertise",
+      "expertiseDesc": "From buying to selling, financing to renovating"
     }
   },
-  "properties": {
-    "title": "Our Current Properties",
-    "description": "Discover our carefully selected properties in Prague's most desirable locations. Each property is personally inspected to ensure quality and value.",
-    "viewDetails": "View Details",
-    "priceOnRequest": "Price on request",
-    "noProperties": "No properties available at the moment."
+  "services": {
+    "title": "Our Services",
+    "description": "ISG offers comprehensive real estate services designed to maximize your investment potential and minimize your stress throughout the property cycle.",
+    "realEstate": {
+      "title": "Real Estate",
+      "description": "Buyer's Agent service, Sales and Rentals, Property Management"
+    },
+    "mortgages": {
+      "title": "Mortgages and Loans",
+      "description": "The No1 Czech Mortgage Broker in Prague"
+    },
+    "construction": {
+      "title": "Construction Management",
+      "description": "Architecture and Design, Renovation Projects, Full construction management service"
+    },
+    "investment": {
+      "title": "Property Investment",
+      "description": "Property investment services, Assistance with acquiring properties and mortgages"
+    }
   },
   "team": {
-    "title": "Meet Our Team",
-    "description": "Our experienced real estate professionals are here to guide you through every step of your property journey. With deep local knowledge and personalized service, we're committed to finding the perfect solution for your needs.",
-    "seniorAdvisor": "Senior Real Estate Advisor",
-    "consultant": "Real Estate Consultant",
-    "ludmilaAbout": "With extensive experience in Prague's real estate market, Ludmila specializes in residential properties and personalized client service. Her deep knowledge of local neighborhoods and market trends helps clients make informed decisions about their property investments.",
-    "jiriAbout": "Jiří brings a fresh perspective to real estate consulting with his analytical approach and commitment to client satisfaction. He excels at matching clients with properties that fit their lifestyle and budget, ensuring a smooth transaction process from start to finish."
+    "title": "Our Expertise",
+    "description": "ISG brings together a team of experienced professionals specializing in all aspects of real estate investment and management in Prague. Our comprehensive approach ensures you receive expert guidance at every step of your property journey.",
+    "realEstateTitle": "Real Estate Specialists",
+    "realEstateDesc": "Expert buyer's agents, sales professionals, and property managers with deep knowledge of Prague's real estate market.",
+    "mortgageTitle": "Mortgage Brokers", 
+    "mortgageDesc": "Certified Czech mortgage brokers helping you secure the best financing options for your property investments.",
+    "constructionTitle": "Construction Managers",
+    "constructionDesc": "Experienced architects, designers, and project managers overseeing renovation and construction projects from start to finish.",
+    "investmentTitle": "Investment Advisors",
+    "investmentDesc": "Financial specialists providing strategic guidance on property investment opportunities and portfolio management."
   },
   "testimonials": {
     "title": "What Our Clients Say",
@@ -48,7 +66,12 @@
   },
   "contact": {
     "title": "Get in Touch",
-    "description": "We'd love to hear from you! Whether you're looking to buy, sell, or rent, we'll provide guidance every step of the way.",
+    "description": "Ready to start your real estate journey? Contact ISG today for expert guidance on buying, selling, financing, or managing properties in Prague.",
+    "company": "ISG Invest s.r.o.",
+    "address": "Korunni 727/7, Prague 2, 120 00, Czech Republic",
+    "phone": "+420 736 535 556",
+    "email": "info@isginvest.cz",
+    "hours": "Monday-Friday 09:00-17:00, Weekends by Appointment",
     "form": {
       "name": "Name",
       "email": "Email",
@@ -71,9 +94,9 @@
     "quickLinks": "Quick Links",
     "socialMedia": "Follow Us on Social Media",
     "newsletter": "Subscribe to Newsletter",
-    "copyright": "© 2025 Prague Dream Homes. Family-run and proud.",
+    "copyright": "© 2025 ISG Invest s.r.o. Prague's No 1 Buyer's Agency.",
     "subscribeButton": "Subscribe",
-    "companyBlurb": "Family-run real estate company in Prague with over 10 years of combined experience.",
+    "companyBlurb": "ISG can help with all aspects of the real estate cycle, from buying to selling, financing, renovating, and managing properties.",
     "contactLabel": "Contact:",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",

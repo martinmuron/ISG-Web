@@ -27,7 +27,7 @@ export function Hero() {
             <Button
               size="lg"
               className="bg-brand hover:bg-brand-700 text-white px-8 py-3"
-              onClick={() => scrollToSection("properties")}
+              onClick={() => scrollToSection("services")}
             >
               {t("viewListings")}
             </Button>

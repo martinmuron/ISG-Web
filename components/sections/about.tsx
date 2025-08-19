@@ -22,26 +22,26 @@ export function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 mt-12 sm:mt-16">
             <div className="text-center space-y-4">
               <div className="w-16 h-16 mx-auto bg-brand-50 rounded-full flex items-center justify-center">
-                <span className="text-2xl font-bold text-brand">10+</span>
+                <span className="text-2xl font-bold text-brand">125</span>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900">{t("stats.yearsExperienceTitle")}</h3>
-              <p className="text-slate-600">{t("stats.yearsExperienceDesc")}</p>
+              <h3 className="text-xl font-semibold text-slate-900">{t("stats.propertiesTitle")}</h3>
+              <p className="text-slate-600">{t("stats.propertiesDesc")}</p>
             </div>
 
             <div className="text-center space-y-4">
               <div className="w-16 h-16 mx-auto bg-brand-50 rounded-full flex items-center justify-center">
-                <span className="text-2xl font-bold text-brand">2021</span>
+                <span className="text-2xl font-bold text-brand">55</span>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900">{t("stats.establishedTitle")}</h3>
-              <p className="text-slate-600">{t("stats.establishedDesc")}</p>
+              <h3 className="text-xl font-semibold text-slate-900">{t("stats.renovationsTitle")}</h3>
+              <p className="text-slate-600">{t("stats.renovationsDesc")}</p>
             </div>
 
             <div className="text-center space-y-4">
               <div className="w-16 h-16 mx-auto bg-brand-50 rounded-full flex items-center justify-center">
-                <span className="text-2xl font-bold text-brand">♥</span>
+                <span className="text-2xl font-bold text-brand">♦</span>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900">{t("stats.personalTouchTitle")}</h3>
-              <p className="text-slate-600">{t("stats.personalTouchDesc")}</p>
+              <h3 className="text-xl font-semibold text-slate-900">{t("stats.expertiseTitle")}</h3>
+              <p className="text-slate-600">{t("stats.expertiseDesc")}</p>
             </div>
           </div>
         </div>

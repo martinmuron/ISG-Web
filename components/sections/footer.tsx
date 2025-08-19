@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Logo } from "@/components/ui/logo";
@@ -9,15 +9,14 @@ import { Logo } from "@/components/ui/logo";
 export function Footer() {
   const t = useTranslations("footer");
   const navT = useTranslations("navigation");
-  const locale = useLocale();
   const [email, setEmail] = useState("");
 
   const navigation = [
-    { name: navT("home"), href: `/${locale}#home` },
-    { name: navT("about"), href: `/${locale}#about` },
-    { name: navT("properties"), href: `/${locale}#properties` },
-    { name: navT("team"), href: `/${locale}#team` },
-    { name: navT("contact"), href: `/${locale}#contact` },
+    { name: navT("home"), href: "#home" },
+    { name: navT("about"), href: "#about" },
+    { name: navT("services"), href: "#services" },
+    { name: navT("team"), href: "#team" },
+    { name: navT("contact"), href: "#contact" },
   ];
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
@@ -43,8 +42,8 @@ export function Footer() {
             </p>
             <div className="space-y-2">
               <p className="text-sm text-slate-400">{t("contactLabel")}</p>
-              <p className="text-sm text-slate-300">janockova66@gmail.com</p>
-              <p className="text-sm text-slate-300">+420 736 631 667</p>
+              <p className="text-sm text-slate-300">info@isginvest.cz</p>
+              <p className="text-sm text-slate-300">+420 736 535 556</p>
             </div>
           </div>
 
