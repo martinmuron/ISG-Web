@@ -11,25 +11,25 @@ export function Team() {
       icon: Users,
       title: t("realEstateTitle"),
       description: t("realEstateDesc"),
-      color: "bg-blue-500"
+      color: "bg-brand-400"
     },
     {
       icon: CreditCard,
       title: t("mortgageTitle"),
       description: t("mortgageDesc"),
-      color: "bg-green-500"
+      color: "bg-brand-500"
     },
     {
       icon: Wrench,
       title: t("constructionTitle"),
       description: t("constructionDesc"),
-      color: "bg-orange-500"
+      color: "bg-brand-600"
     },
     {
       icon: TrendingUp,
       title: t("investmentTitle"),
       description: t("investmentDesc"),
-      color: "bg-purple-500"
+      color: "bg-brand-700"
     }
   ];
 

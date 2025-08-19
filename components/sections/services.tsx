@@ -68,25 +68,25 @@ export function Services() {
       icon: Home,
       title: t("realEstate.title"),
       description: t("realEstate.description"),
-      color: "bg-blue-500"
+      color: "bg-brand-500"
     },
     {
       icon: CreditCard,
       title: t("mortgages.title"),
       description: t("mortgages.description"),
-      color: "bg-green-500"
+      color: "bg-brand-600"
     },
     {
       icon: Wrench,
       title: t("construction.title"),
       description: t("construction.description"),
-      color: "bg-orange-500"
+      color: "bg-brand-700"
     },
     {
       icon: TrendingUp,
       title: t("investment.title"),
       description: t("investment.description"),
-      color: "bg-purple-500"
+      color: "bg-brand-800"
     }
   ];
 
