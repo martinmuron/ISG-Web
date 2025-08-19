@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Logo } from "@/components/ui/logo";
+import Link from "next/link";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -12,11 +13,17 @@ export function Footer() {
   const [email, setEmail] = useState("");
 
   const navigation = [
-    { name: navT("home"), href: "#home" },
-    { name: navT("about"), href: "#about" },
-    { name: navT("services"), href: "#services" },
-    { name: navT("team"), href: "#team" },
-    { name: navT("contact"), href: "#contact" },
+    { name: navT("home"), href: "/" },
+    { name: navT("about"), href: "/#about" },
+    { name: navT("contact"), href: "/#contact" },
+  ];
+
+  const services = [
+    { name: navT("buyersAgent"), href: "/buyers-agent" },
+    { name: navT("sellingProperty"), href: "/selling-property" },
+    { name: navT("finance"), href: "/finance" },
+    { name: navT("construction"), href: "/construction" },
+    { name: navT("investment"), href: "/investment" },
   ];
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
@@ -33,7 +40,7 @@ export function Footer() {
   return (
     <footer className="bg-slate-900 text-white">
       <div className="container px-4 md:px-6 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <Logo className="h-8 w-auto text-white" />
@@ -52,38 +59,68 @@ export function Footer() {
             <h3 className="text-lg font-semibold">{t("quickLinks")}</h3>
             <nav className="space-y-2">
               {navigation.map((item) => (
-                <button
+                <Link
                   key={item.name}
-                  onClick={() => scrollToSection(item.href)}
+                  href={item.href}
                   className="block text-sm text-slate-300 hover:text-white transition-colors"
                 >
                   {item.name}
-                </button>
+                </Link>
               ))}
             </nav>
           </div>
 
-          {/* Social Media */}
+          {/* Services Links */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold">{navT("services")}</h3>
+            <nav className="space-y-2">
+              {services.map((service) => (
+                <Link
+                  key={service.name}
+                  href={service.href}
+                  className="block text-sm text-slate-300 hover:text-white transition-colors"
+                >
+                  {service.name}
+                </Link>
+              ))}
+            </nav>
+          </div>
+
+          {/* Social Media & Contact */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">{t("socialMedia")}</h3>
             <div className="space-y-2">
               <a 
-                href="#" 
+                href="https://www.facebook.com/ISGInvest" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block text-sm text-slate-300 hover:text-white transition-colors"
               >
                 Facebook
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/company/isg-invest" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block text-sm text-slate-300 hover:text-white transition-colors"
               >
                 LinkedIn
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/isginvest" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block text-sm text-slate-300 hover:text-white transition-colors"
               >
                 Instagram
+              </a>
+              <a 
+                href="https://wa.me/420732554956" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-sm text-slate-300 hover:text-white transition-colors"
+              >
+                WhatsApp: +420 732 554 956
               </a>
             </div>
           </div>
