@@ -1,0 +1,104 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "properties": "Properties",
+    "team": "Our Team",
+    "contact": "Contact",
+    "language": "Language",
+    "menu": "Menu"
+  },
+  "hero": {
+    "headline": "Find Your Dream Home in Prague and Beyond",
+    "subheadline": "Family-run real estate company offering modern apartments, houses, and investment properties with over a decade of experience.",
+    "viewListings": "View Listings",
+    "contactUs": "Contact Us"
+  },
+  "about": {
+    "title": "Who We Are",
+    "description": "We are a family-run real estate company, operating since 2021, with over 10 years of combined experience in the real estate market. Our mission is to guide every client smoothly through buying, selling, or renting properties in Prague and surrounding areas, combining professionalism with a personal touch.",
+    "stats": {
+      "yearsExperienceTitle": "Years Experience",
+      "yearsExperienceDesc": "Combined expertise in Prague real estate market",
+      "establishedTitle": "Established",
+      "establishedDesc": "Family-run business since 2021",
+      "personalTouchTitle": "Personal Touch",
+      "personalTouchDesc": "Combining professionalism with family values"
+    }
+  },
+  "properties": {
+    "title": "Our Current Properties",
+    "description": "Discover our carefully selected properties in Prague's most desirable locations. Each property is personally inspected to ensure quality and value.",
+    "viewDetails": "View Details",
+    "priceOnRequest": "Price on request",
+    "noProperties": "No properties available at the moment."
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "description": "Our experienced real estate professionals are here to guide you through every step of your property journey. With deep local knowledge and personalized service, we're committed to finding the perfect solution for your needs.",
+    "seniorAdvisor": "Senior Real Estate Advisor",
+    "consultant": "Real Estate Consultant",
+    "ludmilaAbout": "With extensive experience in Prague's real estate market, Ludmila specializes in residential properties and personalized client service. Her deep knowledge of local neighborhoods and market trends helps clients make informed decisions about their property investments.",
+    "jiriAbout": "Jiří brings a fresh perspective to real estate consulting with his analytical approach and commitment to client satisfaction. He excels at matching clients with properties that fit their lifestyle and budget, ensuring a smooth transaction process from start to finish."
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "description": "Our clients value our personal approach, attention to detail, and dedication. Here's what some of them have to say:",
+    "example": "Professional service, excellent support, and the perfect property for our family!"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "We'd love to hear from you! Whether you're looking to buy, sell, or rent, we'll provide guidance every step of the way.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Thank you for your message! We'll get back to you soon.",
+      "error": "Sorry, there was an error sending your message. Please try again."
+    }
+  },
+  "newsletter": {
+    "title": "Stay Updated with Our Latest Listings",
+    "description": "Leave your email and we will always send you our newest real estate listings and market updates.",
+    "emailPlaceholder": "your@email.com",
+    "subscribeButton": "Subscribe",
+    "success": "Thank you for subscribing! You'll receive our latest listings.",
+    "error": "Sorry, there was an error with your subscription. Please try again."
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "socialMedia": "Follow Us on Social Media",
+    "newsletter": "Subscribe to Newsletter",
+    "copyright": "© 2025 Prague Dream Homes. Family-run and proud.",
+    "subscribeButton": "Subscribe",
+    "companyBlurb": "Family-run real estate company in Prague with over 10 years of combined experience.",
+    "contactLabel": "Contact:",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "emailPlaceholder": "your@email.com"
+  },
+  "propertyData": {
+    "property1": {
+      "title": "Prodej bytu 2+kk 44 m², Jana Želivského, Praha",
+      "subtitle": "Newly offered for sale is a beautiful and practical 2+kk apartment with a total size of 44 m², located on the 1st floor in one of Prague's most sought-after locations – Jana Želivského."
+    },
+    "property2": {
+      "title": "Prodej bytu 1+kk 34 m², Jana Želivského, Praha",
+      "subtitle": "Sale of a 1+kk apartment, 30 m², on the 2nd floor of a building with an elevator, in Prague 3 – Žižkov."
+    },
+    "property3": {
+      "title": "Prodej bytu 1+kk 30 m², Jana Želivského, Praha",
+      "subtitle": "This part of the city is undergoing a major transformation and is becoming one of the most sought-after and trendy neighborhoods in Prague, similar to neighboring Karlín. Prices of new apartments in Žižkov are now rising the most in the entire metropolis."
+    },
+    "property4": {
+      "title": "Prodej bytu 2+1 49 m², Seifertova, Praha - Žižkov",
+      "subtitle": "2+1 apartment 49 m² for sale Seifertova, Prague - Žižkov; basement, elevator, multi-story, personal ownership, in very good condition."
+    },
+    "property5": {
+      "title": "Prodej rodinného domu 168 m², pozemek 281 m², Na Jarově, Praha - Žižkov",
+      "subtitle": "GLJ Partners offers for sale a family house in the quiet residential part of Prague 3 Žižkov, on Na Jarově street. The property is an ideal choice for two-generation living or investment. A construction project to expand the living area of the house is currently underway."
+    }
+  }
+}

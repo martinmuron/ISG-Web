@@ -1,0 +1,104 @@
+{
+  "navigation": {
+    "home": "Domů",
+    "about": "O nás",
+    "properties": "Nemovitosti",
+    "team": "Náš tým",
+    "contact": "Kontakt",
+    "language": "Jazyk",
+    "menu": "Menu"
+  },
+  "hero": {
+    "headline": "Najděte svůj vysněný domov v Praze a okolí",
+    "subheadline": "Rodinná realitní kancelář nabízí moderní byty, domy a investiční nemovitosti s více než desetiletou zkušeností.",
+    "viewListings": "Prohlédnout nabídku",
+    "contactUs": "Kontaktujte nás"
+  },
+  "about": {
+    "title": "O nás",
+    "description": "Jsme rodinná realitní kancelář, působící od roku 2021, s více než 10 lety společných zkušeností na realitním trhu. Naším cílem je profesionálně a osobně provést každého klienta procesem koupě, prodeje či pronájmu nemovitostí v Praze a okolí.",
+    "stats": {
+      "yearsExperienceTitle": "Let zkušeností",
+      "yearsExperienceDesc": "Kombinované odborné znalosti na pražském realitním trhu",
+      "establishedTitle": "Založeno",
+      "establishedDesc": "Rodinná firma od roku 2021",
+      "personalTouchTitle": "Osobní přístup",
+      "personalTouchDesc": "Spojení profesionality a rodinných hodnot"
+    }
+  },
+  "properties": {
+    "title": "Naše aktuální nemovitosti",
+    "description": "Objevte naše pečlivě vybrané nemovitosti v nejžádanějších lokalitách Prahy. Každou nemovitost osobně kontrolujeme, abychom zajistili kvalitu a hodnotu.",
+    "viewDetails": "Více informací",
+    "priceOnRequest": "Informace o ceně na vyžádání",
+    "noProperties": "Momentálně nejsou k dispozici žádné nemovitosti."
+  },
+  "team": {
+    "title": "Náš tým",
+    "description": "Naši zkušení realitní profesionálové vás provedou každým krokem vaší cesty za nemovitostí. S hlubokými místními znalostmi a osobním přístupem se zavazujeme najít perfektní řešení pro vaše potřeby.",
+    "seniorAdvisor": "Seniorní realitní poradkyně",
+    "consultant": "Realitní konzultant",
+    "ludmilaAbout": "S rozsáhlými zkušenostmi na pražském realitním trhu se Ludmila specializuje na rezidenční nemovitosti a osobní služby klientům. Její hluboké znalosti místních čtvrtí a tržních trendů pomáhají klientům činit informovaná rozhodnutí o jejich investicích do nemovitostí.",
+    "jiriAbout": "Jiří přináší svěží pohled na realitní poradenství se svým analytickým přístupem a závazkem k spokojenosti klientů. Vyniká v propojování klientů s nemovitostmi, které odpovídají jejich životnímu stylu a rozpočtu, a zajišťuje hladký průběh transakce od začátku do konce."
+  },
+  "testimonials": {
+    "title": "Reference našich klientů",
+    "description": "Naši klienti oceňují osobní přístup, pečlivost a nasazení. Zde jsou jejich zkušenosti:",
+    "example": "Profesionální přístup, skvělá podpora a perfektní nemovitost pro naši rodinu!"
+  },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "description": "Rádi se s vámi spojíme! Ať už chcete koupit, prodat nebo pronajmout, provedeme vás celým procesem.",
+    "form": {
+      "name": "Jméno",
+      "email": "Email",
+      "phone": "Telefon",
+      "message": "Zpráva",
+      "submit": "Odeslat zprávu",
+      "success": "Děkujeme za vaši zprávu! Brzy se vám ozveme.",
+      "error": "Omlouváme se, při odesílání zprávy došlo k chybě. Zkuste to prosím znovu."
+    }
+  },
+  "newsletter": {
+    "title": "Zůstaňte v obraze s našimi nejnovějšími nabídkami",
+    "description": "Zanechte nám svůj email a budeme vám vždy zasílat naše nejnovější nabídky nemovitostí a tržní aktualizace.",
+    "emailPlaceholder": "vas@email.cz",
+    "subscribeButton": "Přihlásit se",
+    "success": "Děkujeme za přihlášení! Budete dostávat naše nejnovější nabídky.",
+    "error": "Omlouváme se, při přihlašování došlo k chybě. Zkuste to prosím znovu."
+  },
+  "footer": {
+    "quickLinks": "Rychlé odkazy",
+    "socialMedia": "Sledujte nás na sociálních sítích",
+    "newsletter": "Přihlásit se k odběru novinek",
+    "copyright": "© 2025 Prague Dream Homes. Rodinná kancelář s hrdostí.",
+    "subscribeButton": "Přihlásit se",
+    "companyBlurb": "Rodinná realitní kancelář v Praze s více než 10 lety společných zkušeností.",
+    "contactLabel": "Kontakt:",
+    "privacyPolicy": "Zásady ochrany osobních údajů",
+    "termsOfService": "Podmínky používání",
+    "emailPlaceholder": "vas@email.cz"
+  },
+  "propertyData": {
+    "property1": {
+      "title": "Prodej bytu 2+kk 44 m², Jana Želivského, Praha",
+      "subtitle": "Nově nabízíme k prodeji krásný a praktický byt v osobním vlastnictví 2+kk o celkovém rozměru 44 m², který se nachází v 1. patře v jedné z nejžádanějších lokalit Prahy – Jana Želivského."
+    },
+    "property2": {
+      "title": "Prodej bytu 1+kk 34 m², Jana Želivského, Praha",
+      "subtitle": "Prodej bytu 1+kk, 30 m², ve 2. patře domu s výtahem, v Praze 3 – Žižkov."
+    },
+    "property3": {
+      "title": "Prodej bytu 1+kk 30 m², Jana Želivského, Praha",
+      "subtitle": "Tato část města prochází velkou proměnou a stává se jednou z nejžádanějších a nejvíc trendy čtvrtí v Praze, podobně jako sousední Karlín. Ceny nových bytů na Žižkově nyní rostou nejvíce v celé metropoli."
+    },
+    "property4": {
+      "title": "Prodej bytu 2+1 49 m², Seifertova, Praha - Žižkov",
+      "subtitle": "Byt 2+1 49 m² k prodeji Seifertova, Praha - Žižkov; sklep, výtah, patrový, osobní vlastnictví, ve velmi dobrém stavu."
+    },
+    "property5": {
+      "title": "Prodej rodinného domu 168 m², pozemek 281 m², Na Jarově, Praha - Žižkov",
+      "subtitle": "GLJ Partners nabízí k prodeji rodinný dům v klidné rezidenční části Prahy 3 Žižkov, v ulici Na Jarově. Nemovitost je ideální volbou pro dvougenerační bydlení nebo investici. V současné době je v řízení stavební projekt na rozšíření obytné plochy domu."
+    }
+  }
+}
