@@ -6,7 +6,7 @@ const newsletterSchema = z.object({
   email: z.string().email('Invalid email address'),
 });
 
-const resend = new Resend('re_3MAgbMVw_9WztNHPFfLvKLT1chBpNSwWb');
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   try {
