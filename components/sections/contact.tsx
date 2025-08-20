@@ -273,6 +273,36 @@ export function Contact() {
             </Card>
           </div>
         </div>
+
+        {/* Map Section */}
+        <div className="mt-16">
+          <div className="text-center space-y-4 mb-8">
+            <h3 className="text-2xl font-bold text-slate-900">Find Us</h3>
+            <p className="text-slate-600">Visit our office in the heart of Prague</p>
+          </div>
+          
+          <div className="bg-slate-50 rounded-lg p-4">
+            <div className="aspect-video w-full rounded-lg overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.0987654321!2d14.484555!3d50.050692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e6b7b9e6e9%3A0x3930b1c8e5c5d9f0!2sKorunnà 727%2C 120 00 Vinohrady%2C Czech Republic!5e0!3m2!1sen!2scz!4v1734707620000!5m2!1sen!2scz"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="ISG Office Location - Korunní 727, Vinohrady, Prague"
+              />
+            </div>
+            
+            <div className="mt-4 text-center">
+              <div className="inline-flex items-center space-x-2 text-slate-600">
+                <MapPin className="h-4 w-4" />
+                <span className="text-sm">Korunní 727, 120 00 Vinohrady, Prague, Czech Republic</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

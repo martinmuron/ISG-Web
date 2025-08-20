@@ -267,7 +267,7 @@ export default function ShortTermRentalPage() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="bg-white rounded-lg shadow-md p-6">
                   <h4 className="text-xl font-semibold text-gray-900 mb-4">Cleaning Services</h4>
                   <div className="text-2xl font-bold text-blue-600 mb-2">260 CZK</div>
@@ -294,6 +294,29 @@ export default function ShortTermRentalPage() {
                   <p className="text-gray-600 text-sm">
                     Professional laundry service for all linens and towels with convenient pickup and delivery.
                   </p>
+                </div>
+
+                <div className="bg-white rounded-lg shadow-md p-6">
+                  <h4 className="text-xl font-semibold text-gray-900 mb-4">Transportation Service</h4>
+                  <div className="text-2xl font-bold text-blue-600 mb-2">300 CZK</div>
+                  <p className="text-gray-600 text-sm mb-4">per trip</p>
+                  <div className="space-y-2">
+                    <p className="text-gray-600 text-sm">Delivery of:</p>
+                    <ul className="text-gray-600 text-sm space-y-1">
+                      <li className="flex items-center">
+                        <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
+                        Cleaning supplies
+                      </li>
+                      <li className="flex items-center">
+                        <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
+                        Guest essentials
+                      </li>
+                      <li className="flex items-center">
+                        <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
+                        Replacement items
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
