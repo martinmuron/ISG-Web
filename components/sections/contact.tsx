@@ -284,7 +284,7 @@ export function Contact() {
           <div className="bg-slate-50 rounded-lg p-4">
             <div className="aspect-video w-full rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.0987654321!2d14.484555!3d50.050692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e6b7b9e6e9%3A0x3930b1c8e5c5d9f0!2sKorunnà 727%2C 120 00 Vinohrady%2C Czech Republic!5e0!3m2!1sen!2scz!4v1734707620000!5m2!1sen!2scz"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10236.503834!2d14.486555!3d50.050692!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b949b5c9f8a37%3A0x3930b1f5c5c5d9f0!2zS29ydW5uw60gNzI3LzcsIDEyMCAwMCBWaW5vaHJhZHksIEN6ZWNoaWE!5e0!3m2!1sen!2s!4v1692707620000!5m2!1sen!2s"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
