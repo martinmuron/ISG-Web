@@ -17,8 +17,8 @@ export function Videos() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Czech Real Estate YouTube channel
-  const CHANNEL_ID = '@czechrealestate';
+  // Czech Real Estate YouTube channel - using handle for now
+  const CHANNEL_ID = 'czechrealestate';
 
   useEffect(() => {
     const fetchVideos = async () => {
