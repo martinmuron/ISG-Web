@@ -253,9 +253,14 @@ function parseYouTubeRSS(rssText: string): YouTubeVideo[] {
       }
       const publishedAt = pubMatch ? pubMatch[1] : new Date().toISOString();
       
-      // Extract thumbnail - try multiple formats
+      // Extract thumbnail - use standard YouTube thumbnail URL format
       const thumbMatch = entry.match(/<media:thumbnail\s+url="([^"]+)"/);
-      const thumbnail = thumbMatch ? thumbMatch[1] : `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+      let thumbnail = thumbMatch ? thumbMatch[1] : `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+      
+      // Ensure we use the high quality thumbnail format
+      if (videoId) {
+        thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+      }
       
       console.log(`Entry ${index}: videoId=${videoId}, title="${title.substring(0, 50)}..."`);
       
