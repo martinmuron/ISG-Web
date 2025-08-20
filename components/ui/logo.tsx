@@ -1,9 +1,14 @@
+import Image from 'next/image';
+
 export function Logo({ className }: { className?: string }) {
   return (
-    <div className={`${className} flex items-center justify-center`}>
-      <div className="text-2xl font-bold text-brand-600">
-        ISG
-      </div>
-    </div>
+    <Image
+      src="/images/logos/isg-logo.svg"
+      alt="ISG Investment Solutions Group"
+      width={80}
+      height={40}
+      className={className}
+      priority
+    />
   );
 }
