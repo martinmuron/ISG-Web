@@ -45,7 +45,7 @@ export function Footer() {
             </p>
             <div className="space-y-2">
               <p className="text-sm text-slate-400">{t("contactLabel")}</p>
-              <p className="text-sm text-slate-300">info@isginvest.cz</p>
+              <p className="text-sm text-slate-300">nick@investmentsolutions.cz</p>
               <p className="text-sm text-slate-300">+420 736 535 556</p>
             </div>
           </div>

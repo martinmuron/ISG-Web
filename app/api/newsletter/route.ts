@@ -13,10 +13,10 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { email } = newsletterSchema.parse(body);
 
-    // Send notification email to jjanocko@hotmail.com
+    // Send notification email to nick@investmentsolutions.cz
     await resend.emails.send({
-      from: 'newsletter@isginvest.cz',
-      to: 'info@isginvest.cz',
+      from: 'newsletter@investmentsolutions.cz',
+      to: 'nick@investmentsolutions.cz',
       subject: 'New Newsletter Subscription',
       html: `
         <h3>New Newsletter Subscription</h3>

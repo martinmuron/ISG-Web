@@ -18,8 +18,8 @@ export async function POST(request: NextRequest) {
 
     // Send email using Resend
     await resend.emails.send({
-      from: 'contact@isginvest.cz',
-      to: 'info@isginvest.cz',
+      from: 'contact@investmentsolutions.cz',
+      to: 'nick@investmentsolutions.cz',
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <h3>New Contact Form Submission</h3>

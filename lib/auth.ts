@@ -1,5 +1,5 @@
 export const ADMIN_CREDENTIALS = {
-  email: "jjanocko@hotmail.com",
+  email: "nick@investmentsolutions.cz",
   password: "celticssuck",
 };
 
