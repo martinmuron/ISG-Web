@@ -17,7 +17,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { contactFormSchema, ContactFormData } from "@/lib/validations";
-import { MapPin, Phone, Mail, Clock, MessageSquare } from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export function Contact() {
   const t = useTranslations("contact");
@@ -138,7 +138,7 @@ export function Contact() {
                 
                 <div className="bg-slate-50 rounded-lg p-4">
                   <h4 className="font-semibold text-slate-900">Adam</h4>
-                  <p className="text-sm text-brand-600 mb-1">Property Sales & Buyer's Agent</p>
+                  <p className="text-sm text-brand-600 mb-1">Property Sales & Buyer&apos;s Agent</p>
                   <p className="text-xs text-slate-500">Joined 2017</p>
                 </div>
                 

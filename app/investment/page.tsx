@@ -3,7 +3,7 @@ import { getMessages } from 'next-intl/server';
 import { Header } from "@/components/sections/header";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, TrendingUp, Home, RefreshCw, Users, Building, DollarSign, Shield } from "lucide-react";
 import type { Metadata } from "next";

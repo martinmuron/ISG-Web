@@ -3,9 +3,9 @@ import { getMessages } from 'next-intl/server';
 import { Header } from "@/components/sections/header";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, CreditCard, Building2, Users, TrendingUp, Shield, Clock } from "lucide-react";
+import { CreditCard, Building2, Users, TrendingUp, Shield, Clock } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -140,7 +140,7 @@ export default async function FinancePage() {
                 </h2>
                 <div className="w-24 h-1 bg-brand-500 mx-auto"></div>
                 <p className="mx-auto max-w-3xl text-lg text-slate-600 md:text-xl">
-                  Our results speak for themselves. We've helped hundreds of clients secure the best mortgage deals in Prague.
+                  Our results speak for themselves. We&apos;ve helped hundreds of clients secure the best mortgage deals in Prague.
                 </p>
               </div>
 
@@ -259,7 +259,7 @@ export default async function FinancePage() {
                     <CardTitle className="text-xl font-semibold text-slate-900">Age Requirements</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-slate-600">Typically must be repaid by borrower's 70th birthday. We help structure terms to meet your needs.</p>
+                    <p className="text-slate-600">Typically must be repaid by borrower&apos;s 70th birthday. We help structure terms to meet your needs.</p>
                   </CardContent>
                 </Card>
 
@@ -330,7 +330,7 @@ export default async function FinancePage() {
                     Ready to Get Your Mortgage?
                   </h2>
                   <p className="mx-auto max-w-3xl text-lg text-brand-100 md:text-xl">
-                    Start with a free property pre-evaluation. We'll assess your needs and show you the best mortgage options available.
+                    Start with a free property pre-evaluation. We&apos;ll assess your needs and show you the best mortgage options available.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

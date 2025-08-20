@@ -3,7 +3,7 @@ import { getMessages } from 'next-intl/server';
 import { Header } from "@/components/sections/header";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Wrench, PenTool, Users, Clock, DollarSign, Shield } from "lucide-react";
 import type { Metadata } from "next";
@@ -349,7 +349,7 @@ export default async function ConstructionPage() {
                     Ready to Start Your Construction Project?
                   </h2>
                   <p className="mx-auto max-w-3xl text-lg text-brand-100 md:text-xl">
-                    Let's discuss your project requirements and develop a comprehensive plan. Get started with a free consultation and project assessment.
+                    Let&apos;s discuss your project requirements and develop a comprehensive plan. Get started with a free consultation and project assessment.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -3,7 +3,7 @@ import { getMessages } from 'next-intl/server';
 import { Header } from "@/components/sections/header";
 import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, TrendingUp, Camera, FileText, Users, Clock } from "lucide-react";
 import type { Metadata } from "next";
@@ -279,7 +279,7 @@ export default async function SellingPropertyPage() {
                     Ready to Sell Your Property?
                   </h2>
                   <p className="mx-auto max-w-3xl text-lg text-brand-100 md:text-xl">
-                    Start with a free property valuation and consultation. We'll analyze your property and provide a comprehensive selling strategy.
+                    Start with a free property valuation and consultation. We&apos;ll analyze your property and provide a comprehensive selling strategy.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

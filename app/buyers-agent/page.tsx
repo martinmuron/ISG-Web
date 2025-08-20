@@ -9,8 +9,8 @@ import { CheckCircle, Search, FileText, Handshake, Home, Eye } from "lucide-reac
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Prague Buyer's Agent Services - ISG Investment Solutions Group",
-  description: "Professional buyer's agent services in Prague. Property search, viewings, negotiation, and closing support. Fixed fees from 25,000 CZK.",
+  title: "Prague Buyer&apos;s Agent Services - ISG Investment Solutions Group",
+  description: "Professional buyer&apos;s agent services in Prague. Property search, viewings, negotiation, and closing support. Fixed fees from 25,000 CZK.",
 };
 
 export default async function BuyersAgentPage() {
@@ -56,10 +56,10 @@ export default async function BuyersAgentPage() {
               <div className="text-center space-y-8">
                 <div className="space-y-4">
                   <Badge className="bg-brand-500 text-white text-sm px-4 py-2">
-                    Prague's #1 Buyer's Agent
+                    Prague&apos;s #1 Buyer&apos;s Agent
                   </Badge>
                   <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-slate-900">
-                    Professional Buyer's Agent Services
+                    Professional Buyer&apos;s Agent Services
                   </h1>
                   <p className="mx-auto max-w-3xl text-lg text-slate-600 md:text-xl">
                     Expert guidance through your Prague property purchase. From search to closing, we handle every detail so you can focus on finding your perfect home.
@@ -93,7 +93,7 @@ export default async function BuyersAgentPage() {
                 </h2>
                 <div className="w-24 h-1 bg-brand-500 mx-auto"></div>
                 <p className="mx-auto max-w-3xl text-lg text-slate-600 md:text-xl">
-                  Our comprehensive buyer's agent services ensure you make the right property investment decision.
+                  Our comprehensive buyer&apos;s agent services ensure you make the right property investment decision.
                 </p>
               </div>
 
@@ -136,10 +136,10 @@ export default async function BuyersAgentPage() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                {/* Buyer's Agent Lite */}
+                {/* Buyer&apos;s Agent Lite */}
                 <Card className="relative bg-white hover:shadow-xl transition-shadow duration-300">
                   <CardHeader className="text-center pb-8">
-                    <CardTitle className="text-2xl font-bold text-slate-900">Buyer's Agent Lite</CardTitle>
+                    <CardTitle className="text-2xl font-bold text-slate-900">Buyer&apos;s Agent Lite</CardTitle>
                     <CardDescription className="text-lg text-slate-600">
                       Perfect for focused property searches
                     </CardDescription>
@@ -173,20 +173,20 @@ export default async function BuyersAgentPage() {
                   </CardContent>
                 </Card>
 
-                {/* Full Buyer's Agent Package */}
+                {/* Full Buyer&apos;s Agent Package */}
                 <Card className="relative bg-white hover:shadow-xl transition-shadow duration-300 border-brand-500 border-2">
                   <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <Badge className="bg-brand-500 text-white px-4 py-1">Most Popular</Badge>
                   </div>
                   <CardHeader className="text-center pb-8 pt-8">
-                    <CardTitle className="text-2xl font-bold text-slate-900">Full Buyer's Agent Package</CardTitle>
+                    <CardTitle className="text-2xl font-bold text-slate-900">Full Buyer&apos;s Agent Package</CardTitle>
                     <CardDescription className="text-lg text-slate-600">
                       Comprehensive property acquisition service
                     </CardDescription>
                     <div className="mt-4">
                       <div className="text-4xl font-bold text-brand-500">1%</div>
                       <div className="text-sm text-slate-500">of purchase price (if not passed to seller)</div>
-                      <div className="text-xs text-slate-400 mt-1">We aim to pass our fee to the seller's agent</div>
+                      <div className="text-xs text-slate-400 mt-1">We aim to pass our fee to the seller&apos;s agent</div>
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-6">
@@ -230,7 +230,7 @@ export default async function BuyersAgentPage() {
             <div className="container px-4 md:px-6">
               <div className="text-center space-y-4 mb-16">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-slate-900">
-                  Why Choose ISG as Your Buyer's Agent?
+                  Why Choose ISG as Your Buyer&apos;s Agent?
                 </h2>
                 <div className="w-24 h-1 bg-brand-500 mx-auto"></div>
               </div>
@@ -249,7 +249,7 @@ export default async function BuyersAgentPage() {
                     <span className="text-2xl font-bold text-brand-500">📊</span>
                   </div>
                   <h3 className="text-xl font-semibold text-slate-900">Market Knowledge</h3>
-                  <p className="text-slate-600">Extensive knowledge of Prague's real estate market</p>
+                  <p className="text-slate-600">Extensive knowledge of Prague&apos;s real estate market</p>
                 </div>
 
                 <div className="text-center space-y-4">
@@ -280,7 +280,7 @@ export default async function BuyersAgentPage() {
                     Ready to Find Your Perfect Property?
                   </h2>
                   <p className="mx-auto max-w-3xl text-lg text-brand-100 md:text-xl">
-                    Get started with a free consultation. We'll discuss your requirements and recommend the best service package for your needs.
+                    Get started with a free consultation. We&apos;ll discuss your requirements and recommend the best service package for your needs.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

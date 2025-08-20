@@ -32,10 +32,6 @@ export function Footer() {
     setEmail("");
   };
 
-  const scrollToSection = (href: string) => {
-    const target = document.querySelector(href.split("#")[1] ? `#${href.split("#")[1]}` : "body");
-    target?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <footer className="bg-slate-900 text-white">
