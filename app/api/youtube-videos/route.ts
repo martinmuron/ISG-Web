@@ -96,7 +96,7 @@ function parseYouTubeRSS(rssText: string): YouTubeVideo[] {
   const videos: YouTubeVideo[] = [];
   
   // Simple XML parsing - extract entry elements
-  const entries = rssText.match(/<entry>(.*?)<\/entry>/gs) || [];
+  const entries = rssText.match(/<entry>[\s\S]*?<\/entry>/g) || [];
   
   entries.forEach((entry, index) => {
     try {
@@ -105,12 +105,12 @@ function parseYouTubeRSS(rssText: string): YouTubeVideo[] {
       const videoId = linkMatch ? linkMatch[1] : '';
       
       // Extract title
-      const titleMatch = entry.match(/<title>(.*?)<\/title>/s);
-      const title = titleMatch ? titleMatch[1].replace(/<!\[CDATA\[(.*?)\]\]>/s, '$1') : '';
+      const titleMatch = entry.match(/<title>([\s\S]*?)<\/title>/);
+      const title = titleMatch ? titleMatch[1].replace(/<!\[CDATA\[([\s\S]*?)\]\]>/, '$1') : '';
       
       // Extract description
-      const descMatch = entry.match(/<media:description>(.*?)<\/media:description>/s);
-      const description = descMatch ? descMatch[1].replace(/<!\[CDATA\[(.*?)\]\]>/s, '$1') : '';
+      const descMatch = entry.match(/<media:description>([\s\S]*?)<\/media:description>/);
+      const description = descMatch ? descMatch[1].replace(/<!\[CDATA\[([\s\S]*?)\]\]>/, '$1') : '';
       
       // Extract published date
       const pubMatch = entry.match(/<published>(.*?)<\/published>/);
