@@ -22,6 +22,7 @@ export function Header() {
   const services = [
     { name: t("buyersAgent"), href: "/buyers-agent" },
     { name: t("sellingProperty"), href: "/selling-property" },
+    { name: t("shortTermRental"), href: "/short-term-rental" },
     { name: t("finance"), href: "/finance" },
     { name: t("construction"), href: "/construction" },
     { name: t("investment"), href: "/investment" },
