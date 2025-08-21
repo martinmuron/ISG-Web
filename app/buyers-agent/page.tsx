@@ -9,8 +9,8 @@ import { CheckCircle, Search, FileText, Handshake, Home, Eye } from "lucide-reac
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Prague Buyer&apos;s Agent Services - ISG Investment Solutions Group",
-  description: "Professional buyer&apos;s agent services in Prague. Property search, viewings, negotiation, and closing support. Fixed fees from 25,000 CZK.",
+  title: "Prague Buyer&apos;s Agent for Expats | English Property Search | ISG",
+  description: "Expert buyer&apos;s agent services for expats in Prague. We find, negotiate & secure your perfect Czech property. English-speaking team. Fixed fees from 25,000 CZK.",
 };
 
 export default async function BuyersAgentPage() {

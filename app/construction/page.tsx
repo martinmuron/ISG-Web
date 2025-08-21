@@ -9,8 +9,8 @@ import { CheckCircle, Wrench, PenTool, Users, Clock, DollarSign, Shield } from "
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Construction Management & Renovation - ISG Investment Solutions Group",
-  description: "Professional construction management, architecture, design, and renovation services in Prague. Reduce costs by 20% with our expert project management.",
+  title: "Prague Construction & Renovation for Expats | English Project Management | ISG",
+  description: "Construction management & renovation in Prague for expats. English-speaking architects, designers & project managers. Reduce costs by 20%. Free consultation.",
 };
 
 export default async function ConstructionPage() {

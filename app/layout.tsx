@@ -4,8 +4,8 @@ import './globals.css';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ISG - Investment Solutions Group",
-  description: "Professional real estate investment services offering modern apartments, houses, and investment properties with expert guidance and over a decade of experience.",
+  title: "Prague Real Estate for Expats | ISG - English Speaking Property Experts",
+  description: "Prague's #1 English-speaking real estate agency for expats. Buy, sell, finance & manage Czech properties. 15+ years serving international clients. Free consultation.",
 };
 
 export default async function RootLayout({

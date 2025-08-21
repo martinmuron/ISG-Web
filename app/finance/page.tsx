@@ -9,8 +9,8 @@ import { CreditCard, Building2, Users, TrendingUp, Shield, Clock } from "lucide-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Czech Mortgages & Finance - ISG Investment Solutions Group",
-  description: "Czech mortgages in plain English. 99.5% success rate with 300+ satisfied clients. Work with 16 banks and 7 building societies.",
+  title: "Czech Mortgages for Expats | English Mortgage Broker Prague | ISG",
+  description: "Czech mortgages in plain English for expats. 99.5% success rate, 300+ satisfied clients. Work with 16 banks. Prague&apos;s trusted English-speaking mortgage broker.",
 };
 
 export default async function FinancePage() {

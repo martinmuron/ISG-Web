@@ -9,8 +9,8 @@ import { CheckCircle, TrendingUp, Home, RefreshCw, Users, Building, DollarSign, 
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Property Investment Services - ISG Investment Solutions Group",
-  description: "Professional property investment guidance in Prague. Buy-to-let, flipping, crowdfunding, and mezzanine financing options. Personalized investment strategies.",
+  title: "Prague Property Investment for Expats | Buy-to-Let & Flipping | ISG",
+  description: "Property investment guidance in Prague for expats. Buy-to-let, flipping, crowdfunding options. English-speaking advisors. Personalized investment strategies for international clients.",
 };
 
 export default async function InvestmentPage() {

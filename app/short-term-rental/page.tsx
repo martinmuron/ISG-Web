@@ -1,5 +1,11 @@
 import { Header } from "@/components/sections/header";
 import { Footer } from "@/components/sections/footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Airbnb Management Prague | Short Term Rental Services for Expats | ISG",
+  description: "Professional Airbnb & short-term rental management in Prague. 15% management fee, cleaning, maintenance. Maximize your property income. English-speaking team.",
+};
 
 export default function ShortTermRentalPage() {
   return (

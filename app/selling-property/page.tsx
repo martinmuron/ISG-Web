@@ -9,8 +9,8 @@ import { CheckCircle, TrendingUp, Camera, FileText, Users, Clock } from "lucide-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sell Your Property in Prague - ISG Investment Solutions Group",
-  description: "Professional property selling services in Prague. Market analysis, staging, virtual tours, and legal support. Competitive 2% + DPH fee.",
+  title: "Sell Prague Property Fast | English-Speaking Real Estate Agent | ISG",
+  description: "Sell your Prague property with English-speaking experts. Market analysis, professional staging, virtual tours. Competitive 2% + DPH fee. Free valuation for expats.",
 };
 
 export default async function SellingPropertyPage() {
