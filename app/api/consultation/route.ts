@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email to ISG
-    const { data, error } = await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: 'ISG Website <no-reply@investmentsolutions.cz>',
       to: ['nick@investmentsolutions.cz'],
       subject: 'New Free Consultation Request',

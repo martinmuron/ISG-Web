@@ -5,9 +5,8 @@ import { Footer } from "@/components/sections/footer";
 import { BuyersAgentHero } from "@/components/buyers-agent/hero";
 import { PackagesSection } from "@/components/buyers-agent/packages";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Search, FileText, Handshake, Home, Eye, Headphones } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Search, FileText, Handshake, Home, Eye, Headphones } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

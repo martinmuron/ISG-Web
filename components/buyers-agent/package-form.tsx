@@ -131,7 +131,7 @@ export function PackageForm({ packageName, onClose, isVisible }: PackageFormProp
             {submitStatus === "success" && (
               <div className="p-3 bg-green-50 border border-green-200 rounded-md">
                 <p className="text-green-800 text-sm">
-                  Thank you! We'll contact you within 24 hours to discuss your {packageName} package.
+                  Thank you! We&apos;ll contact you within 24 hours to discuss your {packageName} package.
                 </p>
               </div>
             )}
