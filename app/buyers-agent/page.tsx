@@ -56,11 +56,12 @@ export default async function BuyersAgentPage() {
         <NextIntlClientProvider locale="en" messages={messages}>
           <Header />
           
-          {/* Hero Section */}
-          <BuyersAgentHero />
+          <main>
+            {/* Hero Section */}
+            <BuyersAgentHero />
 
-          {/* Services Section */}
-          <section className="py-16 sm:py-20 lg:py-32 bg-white">
+            {/* Services Section */}
+            <section className="py-16 sm:py-20 lg:py-32 bg-white">
             <div className="container px-4 md:px-6">
               <div className="text-center space-y-4 mb-16">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-slate-900">
@@ -176,6 +177,7 @@ export default async function BuyersAgentPage() {
               </div>
             </div>
           </section>
+          </main>
 
           <Footer />
         </NextIntlClientProvider>

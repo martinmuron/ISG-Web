@@ -97,8 +97,9 @@ export default async function FinancePage() {
         <NextIntlClientProvider locale="en" messages={messages}>
           <Header />
           
-          {/* Hero Section */}
-          <section className="py-16 sm:py-20 lg:py-32 bg-gradient-to-br from-brand-50 to-brand-100">
+          <main>
+            {/* Hero Section */}
+            <section className="py-16 sm:py-20 lg:py-32 bg-gradient-to-br from-brand-50 to-brand-100">
             <div className="container px-4 md:px-6">
               <div className="text-center space-y-8">
                 <div className="space-y-4">
@@ -349,6 +350,7 @@ export default async function FinancePage() {
               </div>
             </div>
           </section>
+          </main>
 
           <Footer />
         </NextIntlClientProvider>

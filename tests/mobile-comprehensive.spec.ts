@@ -15,7 +15,7 @@ for (const pageInfo of pages) {
     test.beforeEach(async ({ page }) => {
       // Set mobile viewport
       await page.setViewportSize({ width: 375, height: 667 }); // iPhone SE size
-      await page.goto(`http://localhost:3001${pageInfo.path}`);
+      await page.goto(`http://localhost:3000${pageInfo.path}`);
     });
 
     test(`should render ${pageInfo.name} page properly on mobile`, async ({ page }) => {
