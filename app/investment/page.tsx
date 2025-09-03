@@ -20,7 +20,7 @@ export default async function InvestmentPage() {
     {
       icon: Home,
       title: "Buy-to-Let",
-      description: "Rent out properties for potential rental yields of 4%+",
+      description: "Rent out properties for potential rental yields of 4-10%+",
       features: ["Regular rental income", "Property appreciation", "Tax benefits", "Professional management available"]
     },
     {
@@ -155,7 +155,7 @@ export default async function InvestmentPage() {
                   <CardHeader className="text-center pb-8">
                     <CardTitle className="text-3xl font-bold text-slate-900">Rental Yields</CardTitle>
                     <div className="mt-4">
-                      <div className="text-5xl font-bold text-brand-500">4%+</div>
+                      <div className="text-5xl font-bold text-brand-500">4-10%</div>
                       <div className="text-lg text-slate-600 mt-2">Potential annual rental yields</div>
                     </div>
                   </CardHeader>

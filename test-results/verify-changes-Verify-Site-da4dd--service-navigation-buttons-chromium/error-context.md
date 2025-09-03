@@ -1,0 +1,366 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "ISG Investment Solutions Group" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img "ISG Investment Solutions Group" [ref=e6] [cursor=pointer]
+        - navigation [ref=e7]:
+          - link "Home" [ref=e8] [cursor=pointer]:
+            - /url: /
+          - link "About" [ref=e9] [cursor=pointer]:
+            - /url: /#about
+          - link "Contact" [ref=e10] [cursor=pointer]:
+            - /url: /#contact
+          - button "Services" [ref=e12] [cursor=pointer]:
+            - generic [ref=e13] [cursor=pointer]: Services
+            - img [ref=e14] [cursor=pointer]
+        - link "Visit our YouTube channel" [ref=e17] [cursor=pointer]:
+          - /url: https://www.youtube.com/@czechrealestate
+          - img [ref=e18] [cursor=pointer]
+    - main [ref=e20]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - heading "Hello, We're ISG, Your Buyer Agent for Real Estate in Prague." [level=1] [ref=e25]
+          - paragraph [ref=e26]: ISG can help with all aspects of the real estate cycle, from buying to selling, financing, renovating, and managing properties.
+        - generic [ref=e27]:
+          - button "View Our Services" [ref=e28] [cursor=pointer]
+          - button "Contact Us" [ref=e29] [cursor=pointer]
+      - generic [ref=e32]:
+        - heading "Who We Are" [level=2] [ref=e34]
+        - paragraph [ref=e36]: ISG (Investment Solutions Group) is Prague's premier buyer's agency, specializing in comprehensive real estate services for English speakers. We provide expert guidance through every aspect of the real estate cycle, from acquisition to management, ensuring our clients make informed investment decisions.
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e40]: "125"
+            - heading "Properties Under Management" [level=3] [ref=e41]
+            - paragraph [ref=e42]: 125 properties actively managed
+          - generic [ref=e43]:
+            - generic [ref=e45]: "55"
+            - heading "Renovation Projects" [level=3] [ref=e46]
+            - paragraph [ref=e47]: 55 successful renovation projects completed
+          - generic [ref=e48]:
+            - generic [ref=e50]: ♦
+            - heading "Full-Service Expertise" [level=3] [ref=e51]
+            - paragraph [ref=e52]: From buying to selling, financing to renovating
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - heading "Our Services" [level=2] [ref=e56]
+          - paragraph [ref=e58]: ISG offers comprehensive real estate services designed to maximize your investment potential and minimize your stress throughout the property cycle.
+        - generic [ref=e59]:
+          - generic [ref=e61]:
+            - generic [ref=e62]:
+              - img [ref=e64]
+              - generic [ref=e67]:
+                - heading "Real Estate" [level=3] [ref=e68]
+                - paragraph [ref=e69]: Buyer's Agent service, Sales and Rentals, Property Management
+            - link "Learn More" [ref=e71] [cursor=pointer]:
+              - /url: /buyers-agent
+              - button "Learn More" [active] [ref=e72] [cursor=pointer]:
+                - text: Learn More
+                - img
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - img [ref=e77]
+              - generic [ref=e79]:
+                - heading "Mortgages and Loans" [level=3] [ref=e80]
+                - paragraph [ref=e81]: Specializing in Mortgages for Foreigners since 2008
+            - link "Learn More" [ref=e83] [cursor=pointer]:
+              - /url: /finance
+              - button "Learn More" [ref=e84] [cursor=pointer]:
+                - text: Learn More
+                - img
+          - generic [ref=e86]:
+            - generic [ref=e87]:
+              - img [ref=e89]
+              - generic [ref=e91]:
+                - heading "Construction Management" [level=3] [ref=e92]
+                - paragraph [ref=e93]: Architecture and Design, Renovation Projects, Full construction management service
+            - link "Learn More" [ref=e95] [cursor=pointer]:
+              - /url: /construction
+              - button "Learn More" [ref=e96] [cursor=pointer]:
+                - text: Learn More
+                - img
+          - generic [ref=e98]:
+            - generic [ref=e99]:
+              - img [ref=e101]
+              - generic [ref=e104]:
+                - heading "Property Investment" [level=3] [ref=e105]
+                - paragraph [ref=e106]: Property investment services, Assistance with acquiring properties and mortgages
+            - link "Learn More" [ref=e108] [cursor=pointer]:
+              - /url: /investment
+              - button "Learn More" [ref=e109] [cursor=pointer]:
+                - text: Learn More
+                - img
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - heading "Stay Updated with Our Latest Listings" [level=3] [ref=e115]
+            - paragraph [ref=e117]: Leave your email and we will always send you our newest real estate listings and market updates.
+          - generic [ref=e118]:
+            - textbox "your@email.com" [ref=e120]
+            - button "Subscribe" [ref=e121] [cursor=pointer]
+      - generic [ref=e123]:
+        - generic [ref=e124]:
+          - heading "Our Expertise" [level=2] [ref=e125]
+          - paragraph [ref=e127]: ISG brings together a team of experienced professionals specializing in all aspects of real estate investment and management in Prague. Our comprehensive approach ensures you receive expert guidance at every step of your property journey.
+        - generic [ref=e128]:
+          - generic [ref=e131]:
+            - img [ref=e133]
+            - generic [ref=e138]:
+              - heading "Real Estate Specialists" [level=3] [ref=e139]
+              - paragraph [ref=e140]: Expert buyer's agents, sales professionals, and property managers with deep knowledge of Prague's real estate market.
+          - generic [ref=e143]:
+            - img [ref=e145]
+            - generic [ref=e147]:
+              - heading "Mortgage Brokers" [level=3] [ref=e148]
+              - paragraph [ref=e149]: Certified Czech mortgage brokers helping you secure the best financing options for your property investments.
+          - generic [ref=e152]:
+            - img [ref=e154]
+            - generic [ref=e156]:
+              - heading "Construction Managers" [level=3] [ref=e157]
+              - paragraph [ref=e158]: Experienced architects, designers, and project managers overseeing renovation and construction projects from start to finish.
+          - generic [ref=e161]:
+            - img [ref=e163]
+            - generic [ref=e166]:
+              - heading "Investment Advisors" [level=3] [ref=e167]
+              - paragraph [ref=e168]: Financial specialists providing strategic guidance on property investment opportunities and portfolio management.
+      - generic [ref=e170]:
+        - generic [ref=e171]:
+          - heading "Latest Videos" [level=2] [ref=e172]
+          - paragraph [ref=e173]: Stay updated with our latest content
+        - generic [ref=e174]:
+          - generic [ref=e175]:
+            - generic [ref=e176]:
+              - img "July 2025 Czech Real Estate Market Review | ISG | Czech Real Estate" [ref=e177]
+              - button [ref=e179] [cursor=pointer]:
+                - img [ref=e180] [cursor=pointer]
+            - generic [ref=e182]:
+              - heading "July 2025 Czech Real Estate Market Review | ISG | Czech Real Estate" [level=3] [ref=e183]
+              - paragraph [ref=e184]: "Here’s what happened in the Czech property market in July: • Prague property prices rose 1.4%, while national prices increased by 0.4%. • Rental prices also climbed—up 1.3% in Prague and 0.4% across the country. Brno rents hit record highs and are now just 10% lower than those in Prague. • Despite this, property purchase prices in Prague remain about 25% higher than in Brno. • Mortgage interest rates rose slightly to 5.05%, likely due to fewer summer promotions from banks. • The Czech National Bank signaled no near-term changes to base rates, with inflation holding at 2.7%. Although summer is typically a quiet season for sales, both property and rental prices continued their gradual upward trend. We'll be watching closely to see how things develop after the summer period. Thanks for watching, and see you in the next update."
+              - generic [ref=e185]:
+                - generic [ref=e186]: 9/3/2025
+                - link "Watch →" [ref=e187] [cursor=pointer]:
+                  - /url: https://www.youtube.com/watch?v=z4_4Ya8944Y
+          - generic [ref=e188]:
+            - generic [ref=e189]:
+              - img "June 2025 Czech Real Estate Market Review | ISG | Czech Real Estate" [ref=e190]
+              - button [ref=e192] [cursor=pointer]:
+                - img [ref=e193] [cursor=pointer]
+            - generic [ref=e195]:
+              - heading "June 2025 Czech Real Estate Market Review | ISG | Czech Real Estate" [level=3] [ref=e196]
+              - paragraph [ref=e197]: "In this video, we take a look at how the Czech property market performed in June: • Prague property prices rose by 0.4%, marking the fourth consecutive month of modest growth. • National average prices declined slightly by 0.2%, with cities like Brno and Ostrava continuing to edge higher while other regions soften. • Rental prices in Prague increased by 0.9% but still remain about 4% below the peak earlier this year. • Mortgage interest rates stayed stable at 4.94%, but application volumes are now back to 2021 levels. • Across the EU, Czechia saw one of the strongest performances in annual house price growth at 9.9%, compared to the EU average of 5.7%. While activity remains strong in major cities, we’re seeing more divergence across the country. Rental market trends will become clearer after the summer. Thanks for watching, and see you again next month."
+              - generic [ref=e198]:
+                - generic [ref=e199]: 8/8/2025
+                - link "Watch →" [ref=e200] [cursor=pointer]:
+                  - /url: https://www.youtube.com/watch?v=bc5PQTEdTv4
+          - generic [ref=e201]:
+            - generic [ref=e202]:
+              - img "May 2025 Czech Real Estate Review | ISG" [ref=e203]
+              - button [ref=e205] [cursor=pointer]:
+                - img [ref=e206] [cursor=pointer]
+            - generic [ref=e208]:
+              - heading "May 2025 Czech Real Estate Review | ISG" [level=3] [ref=e209]
+              - paragraph [ref=e210]: "May 2025 Czech Real Estate Review | ISG This month’s update covers the latest figures and what they could mean for the market: • Prague sale prices: +0.2 % — momentum slowing after months of gains • Nationwide prices: flat on average • Prague rents: +0.7 % — a modest rebound following recent declines • Average mortgage rate: 4.94 % — only a fractional drop Key points • Prague values appear to be consolidating. Is this a short-term peak or just a pause before the next move? • Rental rates show no strong recovery yet; increases remain modest. • Interest rates continue their gradual slide but not enough to reignite buyer activity. • Global market jitters (tariffs, inflation worries) add caution and could shape the months ahead. Have questions about the Czech market or need tailored advice? Drop them in the comments or contact ISG directly."
+              - generic [ref=e211]:
+                - generic [ref=e212]: 7/3/2025
+                - link "Watch →" [ref=e213] [cursor=pointer]:
+                  - /url: https://www.youtube.com/watch?v=y_vPSSeYr-Q
+          - generic [ref=e214]:
+            - generic [ref=e215]:
+              - img "April 2025 Real Estate Market Review | Czech Republic" [ref=e216]
+              - button [ref=e218] [cursor=pointer]:
+                - img [ref=e219] [cursor=pointer]
+            - generic [ref=e221]:
+              - heading "April 2025 Real Estate Market Review | Czech Republic" [level=3] [ref=e222]
+              - paragraph [ref=e223]: "In this month’s market breakdown, Nick from ISG reviews the key stats and trends across the Czech real estate market: 📍 Market Highlights: Prague property prices: +0.1% (a slowdown from previous months) Nationwide: +0.45% average, led by Zlín with a big +4.9% jump Prague rents: +1.5% – a sign of recovery after earlier declines Top rental growth cities: Olomouc, Karlovy Vary, Zlín (4–5%) Mortgage rates: Down to 4.65%, finally below the 5% mark Despite the drop in rates, price growth remains modest as buyers weigh global uncertainty, inflation concerns, and potential tariffs. 📉 Is this a pause, or the start of a new trend? Watch the video for Nick’s full analysis. 🔔 Subscribe for monthly market reviews and real estate insights. #ISG #CzechProperty #RealEstateReview #April2025 #MarketUpdate"
+              - generic [ref=e224]:
+                - generic [ref=e225]: 6/5/2025
+                - link "Watch →" [ref=e226] [cursor=pointer]:
+                  - /url: https://www.youtube.com/watch?v=GapMvGzhosU
+          - generic [ref=e227]:
+            - generic [ref=e228]:
+              - img "March 2025 Real Estate Update | Czech Market Review" [ref=e229]
+              - button [ref=e231] [cursor=pointer]:
+                - img [ref=e232] [cursor=pointer]
+            - generic [ref=e234]:
+              - heading "March 2025 Real Estate Update | Czech Market Review" [level=3] [ref=e235]
+              - paragraph [ref=e236]: "🏡 March 2025 Real Estate Market Review | Czech Republic In this month’s real estate update, Nick from ISG breaks down the key stats and trends for March 2025: 📈 Property Prices: Prague up 1.1% Nationwide up 1.2% Strong growth in Zlín, Jihlava, and Ústí nad Labem Top cities YoY: Ostrava, Liberec, Ústí nad Labem 📉 Rents: Prague rents fell 3% in March Down 2.5% year-over-year Inflation and affordability are starting to put pressure on renters 🏦 Interest Rates: Mortgage rates dipped to 5.01% Likely to fall below 5% next month Czech National Bank held rates steady in March after a 0.25% cut in February 📊 Insights: For the first time in years, rents and prices are diverging again Demand for property remains high as mortgages become slightly more affordable Stock market dips may impact real estate 6–12 months from now 🔔 Subscribe for the latest market insights and updates from ISG #CzechRealEstate #PragueMarket #ISG #RealEstateUpdate #March2025"
+              - generic [ref=e237]:
+                - generic [ref=e238]: 4/16/2025
+                - link "Watch →" [ref=e239] [cursor=pointer]:
+                  - /url: https://www.youtube.com/watch?v=oxKS9ogkXOM
+          - generic [ref=e240]:
+            - generic [ref=e241]:
+              - img "Buyer's Guide 2025 | Part 1 | Nick from ISG" [ref=e242]
+              - button [ref=e244] [cursor=pointer]:
+                - img [ref=e245] [cursor=pointer]
+            - generic [ref=e247]:
+              - heading "Buyer's Guide 2025 | Part 1 | Nick from ISG" [level=3] [ref=e248]
+              - paragraph [ref=e249]: "Welcome to ISG’s 2025 Buyer’s Guide! In this first episode, Nick breaks down the most important question every buyer must answer: Are you buying to live, to invest – or both? 🏠📈 We explore: The emotional vs financial sides of buying Why mixing both purposes might not work Tips for gaining clarity before making your purchase Whether you're a first-time buyer or seasoned investor, this episode will help you approach real estate with confidence. 📍 Based in the Czech Republic 🔔 Subscribe for more buyer tips and market reviews 📧 Contact us at ISG for personal advice and support #ISG #RealEstateCzechRepublic #BuyersGuide #PragueProperty #CzechRealEstate #PropertyInvestment #HomeBuying"
+              - generic [ref=e250]:
+                - generic [ref=e251]: 4/2/2025
+                - link "Watch →" [ref=e252] [cursor=pointer]:
+                  - /url: https://www.youtube.com/watch?v=mFDYFGT3yjc
+      - generic [ref=e254]:
+        - generic [ref=e255]:
+          - heading "What Our Clients Say" [level=2] [ref=e256]
+          - paragraph [ref=e258]: "Our clients value our personal approach, attention to detail, and dedication. Here's what some of them have to say:"
+        - generic [ref=e259]:
+          - generic [ref=e261]:
+            - generic [ref=e262]: “
+            - paragraph [ref=e263]: Professional service, excellent support, and the perfect property for our family!
+            - generic [ref=e264]:
+              - paragraph [ref=e265]: Marie Novák
+              - paragraph [ref=e266]: Property Buyer
+          - generic [ref=e268]:
+            - generic [ref=e269]: “
+            - paragraph [ref=e270]: Rychlé jednání, profesionální přístup a skvělé výsledky. Určitě doporučuji!
+            - generic [ref=e271]:
+              - paragraph [ref=e272]: Petr Svoboda
+              - paragraph [ref=e273]: Property Seller
+          - generic [ref=e275]:
+            - generic [ref=e276]: “
+            - paragraph [ref=e277]: Excellent service and personal attention to every detail. Thank you for helping us find our dream home!
+            - generic [ref=e278]:
+              - paragraph [ref=e279]: Anna Procházková
+              - paragraph [ref=e280]: First-time Buyer
+      - generic [ref=e282]:
+        - generic [ref=e283]:
+          - heading "Get in Touch" [level=2] [ref=e284]
+          - paragraph [ref=e286]: Ready to start your real estate journey? Contact ISG today for expert guidance on buying, selling, financing, or managing properties in Prague.
+        - generic [ref=e287]:
+          - generic [ref=e288]:
+            - generic [ref=e289]:
+              - heading "Contact Information" [level=3] [ref=e290]
+              - generic [ref=e291]:
+                - generic [ref=e292]:
+                  - img [ref=e294]
+                  - generic [ref=e297]:
+                    - heading "ISG Invest s.r.o." [level=4] [ref=e298]
+                    - paragraph [ref=e299]: Korunni 727/7, Prague 2, 120 00, Czech Republic
+                - generic [ref=e300]:
+                  - img [ref=e302]
+                  - generic [ref=e304]:
+                    - heading "Phone" [level=4] [ref=e305]
+                    - paragraph [ref=e306]: +420 736 535 556
+                    - paragraph [ref=e307]: "WhatsApp: +420 732 554 956"
+                - generic [ref=e308]:
+                  - img [ref=e310]
+                  - generic [ref=e313]:
+                    - heading "Email" [level=4] [ref=e314]
+                    - paragraph [ref=e315]: nick@investmentsolutions.cz
+                - generic [ref=e316]:
+                  - img [ref=e318]
+                  - generic [ref=e321]:
+                    - heading "Office Hours" [level=4] [ref=e322]
+                    - paragraph [ref=e323]: Monday-Friday 09:00-17:00, Weekends by Appointment
+            - generic [ref=e324]:
+              - heading "Our Team" [level=3] [ref=e325]
+              - generic [ref=e326]:
+                - generic [ref=e327]:
+                  - heading "Nick" [level=4] [ref=e328]
+                  - paragraph [ref=e329]: Managing Partner
+                  - paragraph [ref=e330]: With ISG since 2008
+                - generic [ref=e331]:
+                  - heading "Robin" [level=4] [ref=e332]
+                  - paragraph [ref=e333]: Mortgages
+                  - paragraph [ref=e334]: Joined 2015
+                - generic [ref=e335]:
+                  - heading "Maria" [level=4] [ref=e336]
+                  - paragraph [ref=e337]: Taxes
+                  - paragraph [ref=e338]: Joined 2018
+                - generic [ref=e339]:
+                  - heading "Lenka" [level=4] [ref=e340]
+                  - paragraph [ref=e341]: Property Management
+                  - paragraph [ref=e342]: Joined 2023
+                - generic [ref=e343]:
+                  - heading "Oliver" [level=4] [ref=e344]
+                  - paragraph [ref=e345]: Construction Management
+                  - paragraph [ref=e346]: Joined 2020
+          - generic [ref=e348]:
+            - generic [ref=e350]: Get in Touch
+            - generic [ref=e352]:
+              - generic [ref=e353]:
+                - generic [ref=e354]:
+                  - generic [ref=e355]: Name
+                  - textbox "Name" [ref=e356]
+                - generic [ref=e357]:
+                  - generic [ref=e358]: Phone
+                  - textbox "Phone" [ref=e359]
+              - generic [ref=e360]:
+                - generic [ref=e361]: Email
+                - textbox "Email" [ref=e362]
+              - generic [ref=e363]:
+                - generic [ref=e364]: Message
+                - textbox "Message" [ref=e365]
+              - button "Send Message" [ref=e366] [cursor=pointer]
+        - generic [ref=e367]:
+          - generic [ref=e368]:
+            - heading "Find Us" [level=3] [ref=e369]
+            - paragraph [ref=e370]: Visit our office in the heart of Prague
+          - generic [ref=e371]:
+            - iframe [ref=e373]
+            - generic [ref=e375]:
+              - img [ref=e376]
+              - generic [ref=e379]: Korunní 727, 120 00 Vinohrady, Prague, Czech Republic
+    - contentinfo [ref=e380]:
+      - generic [ref=e381]:
+        - generic [ref=e382]:
+          - generic [ref=e383]:
+            - img "ISG Investment Solutions Group" [ref=e384]
+            - paragraph [ref=e385]: ISG can help with all aspects of the real estate cycle, from buying to selling, financing, renovating, and managing properties.
+            - generic [ref=e386]:
+              - paragraph [ref=e387]: "Contact:"
+              - paragraph [ref=e388]: nick@investmentsolutions.cz
+              - paragraph [ref=e389]: +420 736 535 556
+          - generic [ref=e390]:
+            - heading "Quick Links" [level=3] [ref=e391]
+            - navigation [ref=e392]:
+              - link "Home" [ref=e393] [cursor=pointer]:
+                - /url: /
+              - link "About" [ref=e394] [cursor=pointer]:
+                - /url: /#about
+              - link "Contact" [ref=e395] [cursor=pointer]:
+                - /url: /#contact
+          - generic [ref=e396]:
+            - heading "Services" [level=3] [ref=e397]
+            - navigation [ref=e398]:
+              - link "Buyer's Agent" [ref=e399] [cursor=pointer]:
+                - /url: /buyers-agent
+              - link "Selling Property" [ref=e400] [cursor=pointer]:
+                - /url: /selling-property
+              - link "Finance" [ref=e401] [cursor=pointer]:
+                - /url: /finance
+              - link "Construction" [ref=e402] [cursor=pointer]:
+                - /url: /construction
+              - link "Investment" [ref=e403] [cursor=pointer]:
+                - /url: /investment
+          - generic [ref=e404]:
+            - heading "Follow Us on Social Media" [level=3] [ref=e405]
+            - generic [ref=e406]:
+              - link "Facebook" [ref=e407] [cursor=pointer]:
+                - /url: https://www.facebook.com/ISGInvest
+              - link "LinkedIn" [ref=e408] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/isg-invest
+              - link "Instagram" [ref=e409] [cursor=pointer]:
+                - /url: https://www.instagram.com/isginvest
+              - 'link "WhatsApp: +420 732 554 956" [ref=e410] [cursor=pointer]':
+                - /url: https://wa.me/420732554956
+          - generic [ref=e411]:
+            - heading "Subscribe to Newsletter" [level=3] [ref=e412]
+            - generic [ref=e413]:
+              - textbox "your@email.com" [ref=e414]
+              - button "Subscribe" [ref=e415] [cursor=pointer]
+        - generic [ref=e417]:
+          - paragraph [ref=e418]: © 2025 ISG Invest s.r.o. Prague's No 1 Buyer's Agency.
+          - generic [ref=e419]:
+            - link "Privacy Policy" [ref=e420] [cursor=pointer]:
+              - /url: "#"
+            - link "Terms of Service" [ref=e421] [cursor=pointer]:
+              - /url: "#"
+  - button "Open Next.js Dev Tools" [ref=e427] [cursor=pointer]:
+    - img [ref=e428] [cursor=pointer]
+  - alert [ref=e431]
+```

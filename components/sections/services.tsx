@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -15,7 +16,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Home, CreditCard, Wrench, TrendingUp } from "lucide-react";
+import { Home, CreditCard, Wrench, TrendingUp, ArrowRight } from "lucide-react";
 
 const newsletterSchema = z.object({
   email: z.string().email("Invalid email address"),
@@ -68,25 +69,29 @@ export function Services() {
       icon: Home,
       title: t("realEstate.title"),
       description: t("realEstate.description"),
-      color: "bg-brand-500"
+      color: "bg-brand-500",
+      link: "/buyers-agent"
     },
     {
       icon: CreditCard,
       title: t("mortgages.title"),
       description: t("mortgages.description"),
-      color: "bg-brand-600"
+      color: "bg-brand-600",
+      link: "/finance"
     },
     {
       icon: Wrench,
       title: t("construction.title"),
       description: t("construction.description"),
-      color: "bg-brand-700"
+      color: "bg-brand-700",
+      link: "/construction"
     },
     {
       icon: TrendingUp,
       title: t("investment.title"),
       description: t("investment.description"),
-      color: "bg-brand-800"
+      color: "bg-brand-800",
+      link: "/investment"
     }
   ];
 
@@ -109,11 +114,11 @@ export function Services() {
             return (
               <Card key={index} className="bg-white hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-8">
-                  <div className="flex items-start space-x-4">
+                  <div className="flex items-start space-x-4 mb-4">
                     <div className={`${service.color} rounded-lg p-3 shrink-0`}>
                       <IconComponent className="h-6 w-6 text-white" />
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-2 flex-1">
                       <h3 className="text-xl font-semibold text-slate-900">
                         {service.title}
                       </h3>
@@ -121,6 +126,18 @@ export function Services() {
                         {service.description}
                       </p>
                     </div>
+                  </div>
+                  <div className="flex justify-end">
+                    <Link href={service.link}>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="border-brand text-brand hover:bg-brand hover:text-white transition-colors"
+                      >
+                        Learn More
+                        <ArrowRight className="h-4 w-4 ml-2" />
+                      </Button>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>

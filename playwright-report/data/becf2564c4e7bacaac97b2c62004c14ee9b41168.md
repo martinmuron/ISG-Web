@@ -1,0 +1,197 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "ISG Investment Solutions Group" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "ISG Investment Solutions Group" [ref=e5] [cursor=pointer]
+      - navigation [ref=e6]:
+        - link "Home" [ref=e7] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=e8] [cursor=pointer]:
+          - /url: /#about
+        - link "Contact" [ref=e9] [cursor=pointer]:
+          - /url: /#contact
+        - button "Services" [ref=e11] [cursor=pointer]:
+          - generic [ref=e12] [cursor=pointer]: Services
+          - img [ref=e13] [cursor=pointer]
+      - link "Visit our YouTube channel" [ref=e16] [cursor=pointer]:
+        - /url: https://www.youtube.com/@czechrealestate
+        - img [ref=e17] [cursor=pointer]
+  - generic [ref=e21]:
+    - generic [ref=e22]:
+      - generic [ref=e23]: "Prague's #1 Buyer's Agent"
+      - heading "Professional Buyer's Agent Services" [level=1] [ref=e24]
+      - paragraph [ref=e25]: Expert guidance through your Prague property purchase. From search to closing, we handle every detail so you can focus on finding your perfect home.
+    - generic [ref=e26]:
+      - button "View Service Packages" [ref=e27] [cursor=pointer]
+      - button "Get Free Consultation" [ref=e28] [cursor=pointer]
+  - generic [ref=e30]:
+    - generic [ref=e31]:
+      - heading "What We Do For You" [level=2] [ref=e32]
+      - paragraph [ref=e34]: Our comprehensive buyer's agent services ensure you make the right property investment decision.
+    - generic [ref=e35]:
+      - generic [ref=e38]:
+        - img [ref=e40]
+        - heading "Property Search" [level=3] [ref=e43]
+        - paragraph [ref=e44]: Comprehensive property sourcing to your exact specifications
+      - generic [ref=e47]:
+        - img [ref=e49]
+        - heading "Attend Viewings" [level=3] [ref=e52]
+        - paragraph [ref=e53]: Professional property viewings with detailed assessments
+      - generic [ref=e56]:
+        - img [ref=e58]
+        - heading "Detailed Reporting" [level=3] [ref=e61]
+        - paragraph [ref=e62]: Comprehensive reports on each property viewed
+      - generic [ref=e65]:
+        - img [ref=e67]
+        - heading "Price & Contract Negotiation" [level=3] [ref=e72]
+        - paragraph [ref=e73]: Expert negotiation to get you the best deal
+      - generic [ref=e76]:
+        - img [ref=e78]
+        - heading "Closing Process Assistance" [level=3] [ref=e81]
+        - paragraph [ref=e82]: Full support through the entire closing process
+  - generic [ref=e84]:
+    - generic [ref=e85]:
+      - heading "Service Packages" [level=2] [ref=e86]
+      - paragraph [ref=e88]: Choose the package that best fits your property buying needs.
+    - generic [ref=e89]:
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - generic [ref=e92]: Buyer's Agent Lite
+          - generic [ref=e93]: Perfect for focused property searches
+          - generic [ref=e94]:
+            - generic [ref=e95]: 25,000 CZK
+            - generic [ref=e96]: Fixed fee
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - generic [ref=e99]:
+              - img [ref=e100]
+              - generic [ref=e103]: 2 property viewings
+            - generic [ref=e104]:
+              - img [ref=e105]
+              - generic [ref=e108]: 2 detailed property reports
+            - generic [ref=e109]:
+              - img [ref=e110]
+              - generic [ref=e113]: Negotiation support
+            - generic [ref=e114]:
+              - img [ref=e115]
+              - generic [ref=e118]: Closing process assistance
+          - button "Choose Lite Package" [ref=e119] [cursor=pointer]
+      - generic [ref=e120]:
+        - generic [ref=e122]: Most Popular
+        - generic [ref=e123]:
+          - generic [ref=e124]: Full Buyer's Agent Package
+          - generic [ref=e125]: Comprehensive property acquisition service
+          - generic [ref=e126]:
+            - generic [ref=e127]: 1%
+            - generic [ref=e128]: of purchase price (if not passed to seller)
+            - generic [ref=e129]: We aim to pass our fee to the seller's agent
+        - generic [ref=e130]:
+          - generic [ref=e131]:
+            - generic [ref=e132]:
+              - img [ref=e133]
+              - generic [ref=e136]: Comprehensive property sourcing
+            - generic [ref=e137]:
+              - img [ref=e138]
+              - generic [ref=e141]: Unlimited property viewings
+            - generic [ref=e142]:
+              - img [ref=e143]
+              - generic [ref=e146]: Detailed reports for all properties
+            - generic [ref=e147]:
+              - img [ref=e148]
+              - generic [ref=e151]: Expert negotiation
+            - generic [ref=e152]:
+              - img [ref=e153]
+              - generic [ref=e156]: Full closing support
+            - generic [ref=e157]:
+              - img [ref=e158]
+              - generic [ref=e161]: Special pricing for purchases over 10 million CZK
+          - button "Choose Full Package" [ref=e162] [cursor=pointer]
+  - generic [ref=e164]:
+    - heading "Why Choose ISG as Your Buyer's Agent?" [level=2] [ref=e166]
+    - generic [ref=e168]:
+      - generic [ref=e169]:
+        - generic [ref=e171]: EN
+        - heading "English-Speaking Service" [level=3] [ref=e172]
+        - paragraph [ref=e173]: Dedicated service for expats and English speakers
+      - generic [ref=e174]:
+        - generic [ref=e176]: 📊
+        - heading "Market Knowledge" [level=3] [ref=e177]
+        - paragraph [ref=e178]: Extensive knowledge of Prague's real estate market
+      - generic [ref=e179]:
+        - generic [ref=e181]: 🤝
+        - heading "Agency Network" [level=3] [ref=e182]
+        - paragraph [ref=e183]: Broad network providing access to all available properties
+      - generic [ref=e184]:
+        - generic [ref=e186]: 💰
+        - heading "Competitive Pricing" [level=3] [ref=e187]
+        - paragraph [ref=e188]: Transparent fees with attempts to pass costs to sellers
+  - generic [ref=e191]:
+    - generic [ref=e192]:
+      - heading "Ready to Find Your Perfect Property?" [level=2] [ref=e193]
+      - paragraph [ref=e194]: Get started with a free consultation. We'll discuss your requirements and recommend the best service package for your needs.
+    - generic [ref=e195]:
+      - button "Schedule Free Consultation" [ref=e196] [cursor=pointer]
+      - button "Call +420 736 535 556" [ref=e197] [cursor=pointer]
+  - contentinfo [ref=e198]:
+    - generic [ref=e199]:
+      - generic [ref=e200]:
+        - generic [ref=e201]:
+          - img "ISG Investment Solutions Group" [ref=e202]
+          - paragraph [ref=e203]: ISG can help with all aspects of the real estate cycle, from buying to selling, financing, renovating, and managing properties.
+          - generic [ref=e204]:
+            - paragraph [ref=e205]: "Contact:"
+            - paragraph [ref=e206]: nick@investmentsolutions.cz
+            - paragraph [ref=e207]: +420 736 535 556
+        - generic [ref=e208]:
+          - heading "Quick Links" [level=3] [ref=e209]
+          - navigation [ref=e210]:
+            - link "Home" [ref=e211] [cursor=pointer]:
+              - /url: /
+            - link "About" [ref=e212] [cursor=pointer]:
+              - /url: /#about
+            - link "Contact" [ref=e213] [cursor=pointer]:
+              - /url: /#contact
+        - generic [ref=e214]:
+          - heading "Services" [level=3] [ref=e215]
+          - navigation [ref=e216]:
+            - link "Buyer's Agent" [ref=e217] [cursor=pointer]:
+              - /url: /buyers-agent
+            - link "Selling Property" [ref=e218] [cursor=pointer]:
+              - /url: /selling-property
+            - link "Finance" [ref=e219] [cursor=pointer]:
+              - /url: /finance
+            - link "Construction" [ref=e220] [cursor=pointer]:
+              - /url: /construction
+            - link "Investment" [ref=e221] [cursor=pointer]:
+              - /url: /investment
+        - generic [ref=e222]:
+          - heading "Follow Us on Social Media" [level=3] [ref=e223]
+          - generic [ref=e224]:
+            - link "Facebook" [ref=e225] [cursor=pointer]:
+              - /url: https://www.facebook.com/ISGInvest
+            - link "LinkedIn" [ref=e226] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/isg-invest
+            - link "Instagram" [ref=e227] [cursor=pointer]:
+              - /url: https://www.instagram.com/isginvest
+            - 'link "WhatsApp: +420 732 554 956" [ref=e228] [cursor=pointer]':
+              - /url: https://wa.me/420732554956
+        - generic [ref=e229]:
+          - heading "Subscribe to Newsletter" [level=3] [ref=e230]
+          - generic [ref=e231]:
+            - textbox "your@email.com" [ref=e232]
+            - button "Subscribe" [ref=e233] [cursor=pointer]
+      - generic [ref=e235]:
+        - paragraph [ref=e236]: © 2025 ISG Invest s.r.o. Prague's No 1 Buyer's Agency.
+        - generic [ref=e237]:
+          - link "Privacy Policy" [ref=e238] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms of Service" [ref=e239] [cursor=pointer]:
+            - /url: "#"
+  - button "Open Next.js Dev Tools" [ref=e245] [cursor=pointer]:
+    - img [ref=e246] [cursor=pointer]
+  - alert [ref=e249]
+```

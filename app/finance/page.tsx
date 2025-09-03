@@ -214,11 +214,9 @@ export default async function FinancePage() {
               <div className="max-w-4xl mx-auto">
                 <div className="space-y-8">
                   {process.map((item, index) => (
-                    <div key={index} className="flex items-start space-x-6">
-                      <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-brand-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                          {item.step}
-                        </div>
+                    <div key={index} className="flex flex-col items-center text-center space-y-4 max-w-md mx-auto">
+                      <div className="w-12 h-12 bg-brand-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                        {item.step}
                       </div>
                       <div className="space-y-2">
                         <h3 className="text-xl font-semibold text-slate-900">{item.title}</h3>
