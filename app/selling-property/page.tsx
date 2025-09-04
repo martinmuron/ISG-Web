@@ -362,6 +362,84 @@ export default async function SellingPropertyPage() {
             </div>
           </section>
 
+          {/* Why Choose ISG Video Section */}
+          <section className="py-16 sm:py-20 lg:py-32 bg-slate-50">
+            <div className="container px-4 md:px-6">
+              <div className="text-center space-y-4 mb-16">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-slate-900">
+                  Why Should You Work With Us?
+                </h2>
+                <div className="w-24 h-1 bg-brand-500 mx-auto"></div>
+                <p className="mx-auto max-w-3xl text-lg text-slate-600 md:text-xl">
+                  Hear directly from Nick at ISG about our approach to real estate in Prague and why we&apos;re the right choice for your property needs.
+                </p>
+              </div>
+
+              <div className="max-w-5xl mx-auto">
+                <FadeInUp delay={0} duration={800}>
+                  <div className="bg-white rounded-2xl p-4 sm:p-8 shadow-lg">
+                    <div className="aspect-video w-full rounded-lg overflow-hidden shadow-2xl">
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          border: 'none',
+                          minHeight: '400px'
+                        }}
+                        src="https://www.youtube.com/embed/82a5Ftp6CSM"
+                        title="Why should you work with us? | Czech Real Estate | Nick from ISG"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                      />
+                    </div>
+                    
+                    <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                      <FadeInUp delay={200}>
+                        <div className="space-y-3">
+                          <BounceIn delay={400}>
+                            <div className="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center">
+                              <Users className="h-8 w-8 text-brand-500" />
+                            </div>
+                          </BounceIn>
+                          <h3 className="text-lg font-semibold text-slate-900">Personal Approach</h3>
+                          <p className="text-slate-600 text-sm">Direct communication with experienced professionals</p>
+                        </div>
+                      </FadeInUp>
+
+                      <FadeInUp delay={300}>
+                        <div className="space-y-3">
+                          <BounceIn delay={500}>
+                            <div className="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center">
+                              <CheckCircle className="h-8 w-8 text-brand-500" />
+                            </div>
+                          </BounceIn>
+                          <h3 className="text-lg font-semibold text-slate-900">Proven Results</h3>
+                          <p className="text-slate-600 text-sm">Track record of successful property transactions</p>
+                        </div>
+                      </FadeInUp>
+
+                      <FadeInUp delay={400}>
+                        <div className="space-y-3">
+                          <BounceIn delay={600}>
+                            <div className="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center">
+                              <span className="text-2xl font-bold text-brand-500">EN</span>
+                            </div>
+                          </BounceIn>
+                          <h3 className="text-lg font-semibold text-slate-900">English Speaking</h3>
+                          <p className="text-slate-600 text-sm">Full service for international clients and expats</p>
+                        </div>
+                      </FadeInUp>
+                    </div>
+                  </div>
+                </FadeInUp>
+              </div>
+            </div>
+          </section>
+
           {/* Process Section */}
           <section id="process" className="py-16 sm:py-20 lg:py-32 bg-white">
             <div className="container px-4 md:px-6">
