@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CreditCard, Building2, Users, TrendingUp, Shield, Clock } from "lucide-react";
+import { FadeInUp, BounceIn } from "@/components/ui/scroll-animations";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -261,23 +262,27 @@ export default async function FinancePage() {
                 {services.map((service, index) => {
                   const IconComponent = service.icon;
                   return (
-                    <Card key={index} className="bg-white hover:shadow-lg transition-shadow duration-300">
-                      <CardContent className="p-8">
-                        <div className="flex items-start space-x-4">
-                          <div className="bg-brand-100 rounded-lg p-3 shrink-0">
-                            <IconComponent className="h-6 w-6 text-brand-500" />
+                    <FadeInUp key={index} delay={index * 150} duration={600}>
+                      <Card className="bg-white hover:shadow-lg transition-shadow duration-300">
+                        <CardContent className="p-8">
+                          <div className="flex items-start space-x-4">
+                            <BounceIn delay={index * 150 + 300} duration={800}>
+                              <div className="bg-brand-100 rounded-lg p-3 shrink-0">
+                                <IconComponent className="h-6 w-6 text-brand-500" />
+                              </div>
+                            </BounceIn>
+                            <div className="space-y-2">
+                              <h3 className="text-xl font-semibold text-slate-900">
+                                {service.title}
+                              </h3>
+                              <p className="text-slate-600 leading-relaxed">
+                                {service.description}
+                              </p>
+                            </div>
                           </div>
-                          <div className="space-y-2">
-                            <h3 className="text-xl font-semibold text-slate-900">
-                              {service.title}
-                            </h3>
-                            <p className="text-slate-600 leading-relaxed">
-                              {service.description}
-                            </p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
+                        </CardContent>
+                      </Card>
+                    </FadeInUp>
                   );
                 })}
               </div>

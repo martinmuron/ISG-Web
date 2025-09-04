@@ -2,6 +2,7 @@
 import { useTranslations } from "next-intl";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, CreditCard, Wrench, TrendingUp } from "lucide-react";
+import { FadeInUp, BounceIn } from "@/components/ui/scroll-animations";
 
 export function Team() {
   const t = useTranslations("team");
@@ -50,23 +51,27 @@ export function Team() {
           {expertiseAreas.map((area, index) => {
             const IconComponent = area.icon;
             return (
-              <Card key={index} className="bg-white hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <div className="flex items-start space-x-4">
-                    <div className={`${area.color} rounded-lg p-3 shrink-0`}>
-                      <IconComponent className="h-6 w-6 text-white" />
+              <FadeInUp key={index} delay={index * 150} duration={600}>
+                <Card className="bg-white hover:shadow-lg transition-shadow duration-300">
+                  <CardContent className="p-8">
+                    <div className="flex items-start space-x-4">
+                      <BounceIn delay={index * 150 + 300} duration={800}>
+                        <div className={`${area.color} rounded-lg p-3 shrink-0`}>
+                          <IconComponent className="h-6 w-6 text-white" />
+                        </div>
+                      </BounceIn>
+                      <div className="space-y-2">
+                        <h3 className="text-xl font-semibold text-slate-900">
+                          {area.title}
+                        </h3>
+                        <p className="text-slate-600 leading-relaxed">
+                          {area.description}
+                        </p>
+                      </div>
                     </div>
-                    <div className="space-y-2">
-                      <h3 className="text-xl font-semibold text-slate-900">
-                        {area.title}
-                      </h3>
-                      <p className="text-slate-600 leading-relaxed">
-                        {area.description}
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </FadeInUp>
             );
           })}
         </div>

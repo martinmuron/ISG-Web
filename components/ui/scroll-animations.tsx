@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useCallback } from 'react';
 
 interface ScrollAnimationProps {
   children: React.ReactNode;
@@ -8,6 +8,7 @@ interface ScrollAnimationProps {
   delay?: number;
   duration?: number;
   className?: string;
+  once?: boolean; // Only animate once
 }
 
 export const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
@@ -15,38 +16,64 @@ export const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
   animation = 'fadeInUp',
   delay = 0,
   duration = 600,
-  className = ''
+  className = '',
+  once = true
 }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Check if user prefers reduced motion
+  const prefersReducedMotion = typeof window !== 'undefined' && 
+    window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const handleIntersection = useCallback((entries: IntersectionObserverEntry[]) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting && (!once || !hasAnimated)) {
+        if (timeoutRef.current) {
+          clearTimeout(timeoutRef.current);
+        }
+        
+        if (prefersReducedMotion) {
+          setIsVisible(true);
+          setHasAnimated(true);
+        } else {
+          timeoutRef.current = setTimeout(() => {
+            setIsVisible(true);
+            setHasAnimated(true);
+          }, delay);
+        }
+      }
+    });
+  }, [delay, once, hasAnimated, prefersReducedMotion]);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setTimeout(() => {
-              setIsVisible(true);
-            }, delay);
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-        rootMargin: '50px 0px -50px 0px'
-      }
-    );
+    const currentElement = elementRef.current;
+    if (!currentElement) return;
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
-    }
+    // Use passive event listeners for better performance
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.1,
+      rootMargin: '50px 0px -100px 0px' // Optimized for mobile
+    });
+
+    observer.observe(currentElement);
 
     return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current);
+      if (currentElement) {
+        observer.unobserve(currentElement);
+      }
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
       }
     };
-  }, [delay]);
+  }, [handleIntersection]);
+
+  // Skip animation wrapper if reduced motion is preferred
+  if (prefersReducedMotion) {
+    return <div className={className}>{children}</div>;
+  }
 
   return (
     <div
@@ -54,7 +81,8 @@ export const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
       className={`scroll-animation ${animation} ${isVisible ? 'animated-in' : ''} ${className}`}
       style={{
         animationDuration: `${duration}ms`,
-        animationFillMode: 'both'
+        animationFillMode: 'both',
+        willChange: isVisible ? 'auto' : 'opacity, transform' // Optimize for GPU
       }}
     >
       {children}

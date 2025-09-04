@@ -18,6 +18,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { contactFormSchema, ContactFormData } from "@/lib/validations";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { FadeInUp, FadeInLeft, BounceIn } from "@/components/ui/scroll-animations";
 
 export function Contact() {
   const t = useTranslations("contact");
@@ -82,46 +83,62 @@ export function Contact() {
               <h3 className="text-2xl font-bold text-slate-900">Contact Information</h3>
               
               <div className="space-y-4">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-brand-100 rounded-lg p-3 shrink-0">
-                    <MapPin className="h-5 w-5 text-brand-500" />
+                <FadeInLeft delay={0}>
+                  <div className="flex items-start space-x-4">
+                    <BounceIn delay={200}>
+                      <div className="bg-brand-100 rounded-lg p-3 shrink-0">
+                        <MapPin className="h-5 w-5 text-brand-500" />
+                      </div>
+                    </BounceIn>
+                    <div>
+                      <h4 className="font-semibold text-slate-900">{t("company")}</h4>
+                      <p className="text-slate-600">{t("address")}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-slate-900">{t("company")}</h4>
-                    <p className="text-slate-600">{t("address")}</p>
-                  </div>
-                </div>
+                </FadeInLeft>
                 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-brand-100 rounded-lg p-3 shrink-0">
-                    <Phone className="h-5 w-5 text-brand-500" />
+                <FadeInLeft delay={150}>
+                  <div className="flex items-start space-x-4">
+                    <BounceIn delay={350}>
+                      <div className="bg-brand-100 rounded-lg p-3 shrink-0">
+                        <Phone className="h-5 w-5 text-brand-500" />
+                      </div>
+                    </BounceIn>
+                    <div>
+                      <h4 className="font-semibold text-slate-900">Phone</h4>
+                      <p className="text-slate-600">{t("phone")}</p>
+                      <p className="text-sm text-slate-500">WhatsApp: +420 732 554 956</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-slate-900">Phone</h4>
-                    <p className="text-slate-600">{t("phone")}</p>
-                    <p className="text-sm text-slate-500">WhatsApp: +420 732 554 956</p>
-                  </div>
-                </div>
+                </FadeInLeft>
                 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-brand-100 rounded-lg p-3 shrink-0">
-                    <Mail className="h-5 w-5 text-brand-500" />
+                <FadeInLeft delay={300}>
+                  <div className="flex items-start space-x-4">
+                    <BounceIn delay={500}>
+                      <div className="bg-brand-100 rounded-lg p-3 shrink-0">
+                        <Mail className="h-5 w-5 text-brand-500" />
+                      </div>
+                    </BounceIn>
+                    <div>
+                      <h4 className="font-semibold text-slate-900">Email</h4>
+                      <p className="text-slate-600">{t("email")}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-slate-900">Email</h4>
-                    <p className="text-slate-600">{t("email")}</p>
-                  </div>
-                </div>
+                </FadeInLeft>
                 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-brand-100 rounded-lg p-3 shrink-0">
-                    <Clock className="h-5 w-5 text-brand-500" />
+                <FadeInLeft delay={450}>
+                  <div className="flex items-start space-x-4">
+                    <BounceIn delay={650}>
+                      <div className="bg-brand-100 rounded-lg p-3 shrink-0">
+                        <Clock className="h-5 w-5 text-brand-500" />
+                      </div>
+                    </BounceIn>
+                    <div>
+                      <h4 className="font-semibold text-slate-900">Office Hours</h4>
+                      <p className="text-slate-600">{t("hours")}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-slate-900">Office Hours</h4>
-                    <p className="text-slate-600">{t("hours")}</p>
-                  </div>
-                </div>
+                </FadeInLeft>
               </div>
             </div>
             
@@ -130,41 +147,53 @@ export function Contact() {
               <h3 className="text-2xl font-bold text-slate-900">Our Team</h3>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="bg-slate-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-slate-900">Nick</h4>
-                  <p className="text-sm text-brand-600 mb-1">Managing Partner</p>
-                  <p className="text-xs text-slate-500">With ISG since 2008</p>
-                </div>
+                <FadeInUp delay={600}>
+                  <div className="bg-slate-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900">Nick</h4>
+                    <p className="text-sm text-brand-600 mb-1">Managing Partner</p>
+                    <p className="text-xs text-slate-500">With ISG since 2008</p>
+                  </div>
+                </FadeInUp>
                 
-                <div className="bg-slate-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-slate-900">Dominika</h4>
-                  <p className="text-sm text-brand-600 mb-1">Property & Sales Manager</p>
-                  <p className="text-xs text-slate-500">Joined 2017</p>
-                </div>
+                <FadeInUp delay={650}>
+                  <div className="bg-slate-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900">Dominika</h4>
+                    <p className="text-sm text-brand-600 mb-1">Property & Sales Manager</p>
+                    <p className="text-xs text-slate-500">Joined 2017</p>
+                  </div>
+                </FadeInUp>
                 
-                <div className="bg-slate-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-slate-900">Robin</h4>
-                  <p className="text-sm text-brand-600 mb-1">Mortgages</p>
-                  <p className="text-xs text-slate-500">Joined 2015</p>
-                </div>
+                <FadeInUp delay={700}>
+                  <div className="bg-slate-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900">Robin</h4>
+                    <p className="text-sm text-brand-600 mb-1">Mortgages</p>
+                    <p className="text-xs text-slate-500">Joined 2015</p>
+                  </div>
+                </FadeInUp>
                 
-                <div className="bg-slate-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-slate-900">Maria</h4>
-                  <p className="text-sm text-brand-600 mb-1">Taxes</p>
-                  <p className="text-xs text-slate-500">Joined 2018</p>
-                </div>
+                <FadeInUp delay={750}>
+                  <div className="bg-slate-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900">Maria</h4>
+                    <p className="text-sm text-brand-600 mb-1">Taxes</p>
+                    <p className="text-xs text-slate-500">Joined 2018</p>
+                  </div>
+                </FadeInUp>
                 
-                <div className="bg-slate-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-slate-900">Lenka</h4>
-                  <p className="text-sm text-brand-600 mb-1">Property Management</p>
-                  <p className="text-xs text-slate-500">Joined 2023</p>
-                </div>
+                <FadeInUp delay={800}>
+                  <div className="bg-slate-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900">Lenka</h4>
+                    <p className="text-sm text-brand-600 mb-1">Property Management</p>
+                    <p className="text-xs text-slate-500">Joined 2023</p>
+                  </div>
+                </FadeInUp>
                 
-                <div className="bg-slate-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-slate-900">Oliver</h4>
-                  <p className="text-sm text-brand-600 mb-1">Construction Management</p>
-                  <p className="text-xs text-slate-500">Joined 2020</p>
-                </div>
+                <FadeInUp delay={850}>
+                  <div className="bg-slate-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-900">Oliver</h4>
+                    <p className="text-sm text-brand-600 mb-1">Construction Management</p>
+                    <p className="text-xs text-slate-500">Joined 2020</p>
+                  </div>
+                </FadeInUp>
               </div>
             </div>
           </div>

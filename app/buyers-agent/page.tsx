@@ -7,6 +7,7 @@ import { PackagesSection } from "@/components/buyers-agent/packages";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Search, FileText, Handshake, Home, Eye, Headphones } from "lucide-react";
+import { FadeInUp, BounceIn } from "@/components/ui/scroll-animations";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -158,21 +159,25 @@ export default async function BuyersAgentPage() {
                 {services.map((service, index) => {
                   const IconComponent = service.icon;
                   return (
-                    <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300">
-                      <CardContent className="p-8">
-                        <div className="flex flex-col items-center space-y-4">
-                          <div className="bg-brand-100 rounded-full p-4">
-                            <IconComponent className="h-8 w-8 text-brand-500" />
+                    <FadeInUp key={index} delay={index * 150} duration={600}>
+                      <Card className="text-center hover:shadow-lg transition-shadow duration-300">
+                        <CardContent className="p-8">
+                          <div className="flex flex-col items-center space-y-4">
+                            <BounceIn delay={index * 150 + 300} duration={800}>
+                              <div className="bg-brand-100 rounded-full p-4">
+                                <IconComponent className="h-8 w-8 text-brand-500" />
+                              </div>
+                            </BounceIn>
+                            <h3 className="text-xl font-semibold text-slate-900">
+                              {service.title}
+                            </h3>
+                            <p className="text-slate-600 leading-relaxed">
+                              {service.description}
+                            </p>
                           </div>
-                          <h3 className="text-xl font-semibold text-slate-900">
-                            {service.title}
-                          </h3>
-                          <p className="text-slate-600 leading-relaxed">
-                            {service.description}
-                          </p>
-                        </div>
-                      </CardContent>
-                    </Card>
+                        </CardContent>
+                      </Card>
+                    </FadeInUp>
                   );
                 })}
               </div>
@@ -193,37 +198,53 @@ export default async function BuyersAgentPage() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center">
-                    <span className="text-2xl font-bold text-brand-500">EN</span>
+                <FadeInUp delay={0} duration={600}>
+                  <div className="text-center space-y-4">
+                    <BounceIn delay={200} duration={800}>
+                      <div className="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center">
+                        <span className="text-2xl font-bold text-brand-500">EN</span>
+                      </div>
+                    </BounceIn>
+                    <h3 className="text-xl font-semibold text-slate-900">English-Speaking Service</h3>
+                    <p className="text-slate-600">Dedicated service for expats and English speakers</p>
                   </div>
-                  <h3 className="text-xl font-semibold text-slate-900">English-Speaking Service</h3>
-                  <p className="text-slate-600">Dedicated service for expats and English speakers</p>
-                </div>
+                </FadeInUp>
 
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center">
-                    <span className="text-2xl font-bold text-brand-500">📊</span>
+                <FadeInUp delay={150} duration={600}>
+                  <div className="text-center space-y-4">
+                    <BounceIn delay={350} duration={800}>
+                      <div className="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center">
+                        <span className="text-2xl font-bold text-brand-500">📊</span>
+                      </div>
+                    </BounceIn>
+                    <h3 className="text-xl font-semibold text-slate-900">Market Knowledge</h3>
+                    <p className="text-slate-600">Extensive knowledge of Prague&apos;s real estate market</p>
                   </div>
-                  <h3 className="text-xl font-semibold text-slate-900">Market Knowledge</h3>
-                  <p className="text-slate-600">Extensive knowledge of Prague&apos;s real estate market</p>
-                </div>
+                </FadeInUp>
 
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center">
-                    <span className="text-2xl font-bold text-brand-500">🤝</span>
+                <FadeInUp delay={300} duration={600}>
+                  <div className="text-center space-y-4">
+                    <BounceIn delay={500} duration={800}>
+                      <div className="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center">
+                        <span className="text-2xl font-bold text-brand-500">🤝</span>
+                      </div>
+                    </BounceIn>
+                    <h3 className="text-xl font-semibold text-slate-900">Agency Network</h3>
+                    <p className="text-slate-600">Broad network providing access to all available properties</p>
                   </div>
-                  <h3 className="text-xl font-semibold text-slate-900">Agency Network</h3>
-                  <p className="text-slate-600">Broad network providing access to all available properties</p>
-                </div>
+                </FadeInUp>
 
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center">
-                    <span className="text-2xl font-bold text-brand-500">💰</span>
+                <FadeInUp delay={450} duration={600}>
+                  <div className="text-center space-y-4">
+                    <BounceIn delay={650} duration={800}>
+                      <div className="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center">
+                        <span className="text-2xl font-bold text-brand-500">💰</span>
+                      </div>
+                    </BounceIn>
+                    <h3 className="text-xl font-semibold text-slate-900">Competitive Pricing</h3>
+                    <p className="text-slate-600">Transparent fees with attempts to pass costs to sellers</p>
                   </div>
-                  <h3 className="text-xl font-semibold text-slate-900">Competitive Pricing</h3>
-                  <p className="text-slate-600">Transparent fees with attempts to pass costs to sellers</p>
-                </div>
+                </FadeInUp>
               </div>
             </div>
           </section>
