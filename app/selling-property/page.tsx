@@ -283,6 +283,85 @@ export default async function SellingPropertyPage() {
             </div>
           </section>
 
+          {/* Virtual Tour Section */}
+          <section className="py-16 sm:py-20 lg:py-32 bg-white">
+            <div className="container px-4 md:px-6">
+              <div className="text-center space-y-4 mb-16">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-slate-900">
+                  Virtual Property Tours
+                </h2>
+                <div className="w-24 h-1 bg-brand-500 mx-auto"></div>
+                <p className="mx-auto max-w-3xl text-lg text-slate-600 md:text-xl">
+                  Experience our professional photography and virtual tour capabilities. 
+                  We create immersive 360° tours that showcase your property&apos;s best features.
+                </p>
+              </div>
+
+              <div className="max-w-5xl mx-auto">
+                <FadeInUp delay={0} duration={800}>
+                  <div className="bg-slate-50 rounded-2xl p-4 sm:p-8">
+                    <div className="aspect-video w-full rounded-lg overflow-hidden shadow-2xl">
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          border: 'none',
+                          minHeight: '400px'
+                        }}
+                        frameBorder="0"
+                        allowFullScreen
+                        allow="xr-spatial-tracking; gyroscope; accelerometer"
+                        scrolling="no"
+                        src="https://kuula.co/share/collection/7P1VH?logo=-1&info=0&fs=1&vr=1&zoom=1&gyro=0&initload=0&thumbs=-1&keys=0"
+                        title="Virtual Property Tour - ISG Real Estate Prague"
+                      />
+                    </div>
+                    
+                    <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                      <FadeInUp delay={200}>
+                        <div className="space-y-3">
+                          <BounceIn delay={400}>
+                            <div className="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center">
+                              <Camera className="h-8 w-8 text-brand-500" />
+                            </div>
+                          </BounceIn>
+                          <h3 className="text-lg font-semibold text-slate-900">360° Photography</h3>
+                          <p className="text-slate-600 text-sm">Professional immersive photography showcasing every angle</p>
+                        </div>
+                      </FadeInUp>
+
+                      <FadeInUp delay={300}>
+                        <div className="space-y-3">
+                          <BounceIn delay={500}>
+                            <div className="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center">
+                              <TrendingUp className="h-8 w-8 text-brand-500" />
+                            </div>
+                          </BounceIn>
+                          <h3 className="text-lg font-semibold text-slate-900">Higher Engagement</h3>
+                          <p className="text-slate-600 text-sm">Virtual tours increase buyer interest by up to 300%</p>
+                        </div>
+                      </FadeInUp>
+
+                      <FadeInUp delay={400}>
+                        <div className="space-y-3">
+                          <BounceIn delay={600}>
+                            <div className="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center">
+                              <Users className="h-8 w-8 text-brand-500" />
+                            </div>
+                          </BounceIn>
+                          <h3 className="text-lg font-semibold text-slate-900">Remote Viewing</h3>
+                          <p className="text-slate-600 text-sm">Allow international buyers to tour from anywhere</p>
+                        </div>
+                      </FadeInUp>
+                    </div>
+                  </div>
+                </FadeInUp>
+              </div>
+            </div>
+          </section>
+
           {/* Process Section */}
           <section id="process" className="py-16 sm:py-20 lg:py-32 bg-white">
             <div className="container px-4 md:px-6">
