@@ -5,11 +5,102 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Airbnb Management Prague | Short Term Rental Services for Expats | ISG",
   description: "Professional Airbnb & short-term rental management in Prague. 15% management fee, cleaning, maintenance. Maximize your property income. English-speaking team.",
+  keywords: "Airbnb management Prague, short term rental management Prague, Prague STR management expats, Airbnb property management Czech Republic, Prague vacation rental management, expat Airbnb management Prague, English speaking rental management Prague, Prague property management Airbnb, short term rental services Prague, Airbnb cleaning Prague",
+  openGraph: {
+    title: "Airbnb Management Prague | Short Term Rental Services for Expats | ISG",
+    description: "Professional Airbnb & short-term rental management in Prague. 15% management fee with complete service including cleaning and maintenance.",
+    url: '/short-term-rental',
+    images: [
+      {
+        url: '/images/services/short-term-rental.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Professional Airbnb and short-term rental management services in Prague',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Airbnb Management Prague | STR Services | ISG",
+    description: "Professional Airbnb & short-term rental management in Prague. 15% management fee with English-speaking team.",
+    images: ['/images/services/short-term-rental.jpg'],
+  },
+  alternates: {
+    canonical: '/short-term-rental',
+  },
 };
 
 export default function ShortTermRentalPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Short Term Rental Management Prague",
+    "description": "Professional Airbnb and short-term rental management services in Prague and Czech Republic. Complete management including cleaning, maintenance, guest support, and revenue optimization for expats.",
+    "provider": {
+      "@type": "Organization",
+      "name": "ISG Real Estate Prague",
+      "url": "https://isg-web.vercel.app"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Prague, Czech Republic"
+    },
+    "audience": {
+      "@type": "Audience",
+      "name": "Expats and English speakers"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "15%",
+      "priceCurrency": "CZK",
+      "description": "management fee (inc. DPH) of booking revenue",
+      "availability": "https://schema.org/InStock"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "STR Management Services",
+      "itemListElement": [
+        {
+          "@type": "Service",
+          "name": "Complete Management",
+          "description": "Full service management including guest communication and maintenance"
+        },
+        {
+          "@type": "Service",
+          "name": "Revenue Optimization",
+          "description": "Dynamic pricing and multi-platform listings"
+        },
+        {
+          "@type": "Service",
+          "name": "Professional Cleaning",
+          "description": "High-quality cleaning between guests",
+          "offers": {
+            "@type": "Offer",
+            "price": "260",
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "24/7 Guest Support",
+          "description": "Round-the-clock guest support in multiple languages"
+        }
+      ]
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://isg-web.vercel.app/short-term-rental"
+    }
+  };
+
   return (
     <div className="min-h-screen">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <Header />
       <main>
         {/* Hero Section */}

@@ -11,10 +11,54 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Prague Construction & Renovation for Expats | English Project Management | ISG",
   description: "Construction management & renovation in Prague for expats. English-speaking architects, designers & project managers. Reduce costs by 20%. Free consultation.",
+  keywords: "Prague construction management, expat renovation Prague, English speaking architects Prague, Czech Republic construction, Prague property renovation, international construction Prague, building contractors Prague, expat home renovation Czech Republic",
+  openGraph: {
+    title: "Prague Construction & Renovation for Expats | ISG",
+    description: "Construction management & renovation in Prague for expats. English-speaking team reduces costs by 20%.",
+    url: '/construction',
+    images: [
+      {
+        url: '/images/services/construction.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Prague construction and renovation services for expats',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Prague Construction & Renovation | ISG",
+    description: "English-speaking construction management in Prague. Reduce renovation costs by 20%.",
+    images: ['/images/services/construction.jpg'],
+  },
+  alternates: {
+    canonical: '/construction',
+  },
 };
 
 export default async function ConstructionPage() {
   const messages = await getMessages({ locale: 'en' });
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Construction and Renovation Services Prague",
+    "description": "Professional construction management and renovation services for expats in Prague. English-speaking team with vetted contractors, architecture, design, and project management.",
+    "provider": {
+      "@type": "Organization",
+      "name": "ISG Real Estate Prague",
+      "url": "https://isg-web.vercel.app"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Prague, Czech Republic"
+    },
+    "audience": {
+      "@type": "Audience",
+      "name": "Expats and international property owners"
+    },
+    "serviceType": "Construction Management"
+  };
 
   const services = [
     {
@@ -78,6 +122,12 @@ export default async function ConstructionPage() {
 
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body>
         <NextIntlClientProvider locale="en" messages={messages}>
           <Header />

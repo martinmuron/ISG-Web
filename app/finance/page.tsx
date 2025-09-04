@@ -10,12 +10,91 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Czech Mortgages for Expats | English Mortgage Broker Prague | ISG",
-  description: "Czech mortgages in plain English for expats. 99.5% success rate, 300+ satisfied clients. Work with 16 banks. Prague&apos;s trusted English-speaking mortgage broker.",
+  description: "Czech mortgages in plain English for expats. 99.5% success rate, 300+ satisfied clients. Work with 16 banks. Prague's trusted English-speaking mortgage broker.",
+  keywords: "Czech mortgage broker, Prague mortgages expats, English speaking mortgage advisor Prague, Czech property financing, expat home loans Prague, Czech Republic mortgage, international buyers mortgage Prague, property financing Czech Republic, mortgage broker Prague",
+  openGraph: {
+    title: "Czech Mortgages for Expats | English Mortgage Broker Prague | ISG",
+    description: "Czech mortgages in plain English for expats. 99.5% success rate, 300+ satisfied clients. Work with 16 banks.",
+    url: '/finance',
+    images: [
+      {
+        url: '/images/services/finance-mortgages.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Czech mortgage broker services for expats in Prague',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Czech Mortgages for Expats | ISG Prague",
+    description: "Czech mortgages in plain English. 99.5% success rate with 300+ satisfied expat clients.",
+    images: ['/images/services/finance-mortgages.jpg'],
+  },
+  alternates: {
+    canonical: '/finance',
+  },
 };
 
 export default async function FinancePage() {
   const messages = await getMessages({ locale: 'en' });
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Czech Mortgage Broker Services Prague",
+    "description": "Professional mortgage brokering services for expats in Prague and Czech Republic. English-speaking team with 99.5% success rate, working with 16 banks and 7 building societies.",
+    "provider": {
+      "@type": "Organization",
+      "name": "ISG Real Estate Prague",
+      "url": "https://isg-web.vercel.app"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Prague, Czech Republic"
+    },
+    "audience": {
+      "@type": "Audience",
+      "name": "Expats and international property buyers"
+    },
+    "serviceType": "Mortgage Brokerage",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Mortgage Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Personal Mortgages",
+            "description": "Mortgage brokering for personal property purchases with competitive rates"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Investment Mortgages", 
+            "description": "Specialized financing for investment properties and buy-to-let portfolios"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Company Mortgages",
+            "description": "Corporate financing solutions for Czech and foreign companies"
+          }
+        }
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "bestRating": "5",
+      "ratingCount": "300"
+    }
+  };
 
   const services = [
     {
@@ -93,6 +172,12 @@ export default async function FinancePage() {
 
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body>
         <NextIntlClientProvider locale="en" messages={messages}>
           <Header />

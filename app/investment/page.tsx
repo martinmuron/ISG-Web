@@ -11,10 +11,88 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Prague Property Investment for Expats | Buy-to-Let & Flipping | ISG",
   description: "Property investment guidance in Prague for expats. Buy-to-let, flipping, crowdfunding options. English-speaking advisors. Personalized investment strategies for international clients.",
+  keywords: "Prague property investment expats, Czech Republic real estate investment, buy-to-let Prague, property flipping Prague, Prague investment properties, expat property investment Czech Republic, English speaking investment advisors Prague, Prague rental yields, property crowdfunding Prague, mezzanine financing Prague",
+  openGraph: {
+    title: "Prague Property Investment for Expats | Buy-to-Let & Flipping | ISG",
+    description: "Property investment guidance in Prague for expats. Buy-to-let, flipping, crowdfunding options. English-speaking advisors with proven investment strategies.",
+    url: '/investment',
+    images: [
+      {
+        url: '/images/services/investment.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Prague property investment services for expats - buy-to-let and flipping opportunities',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Prague Property Investment for Expats | ISG",
+    description: "Property investment guidance in Prague for expats. English-speaking advisors with personalized investment strategies.",
+    images: ['/images/services/investment.jpg'],
+  },
+  alternates: {
+    canonical: '/investment',
+  },
 };
 
 export default async function InvestmentPage() {
   const messages = await getMessages({ locale: 'en' });
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Property Investment Services Prague",
+    "description": "Comprehensive property investment services for expats in Prague and Czech Republic. Buy-to-let, flipping, crowdfunding, and mezzanine financing options with English-speaking advisors.",
+    "provider": {
+      "@type": "Organization",
+      "name": "ISG Real Estate Prague",
+      "url": "https://isg-web.vercel.app"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Prague, Czech Republic"
+    },
+    "audience": {
+      "@type": "Audience",
+      "name": "Expats and English speakers"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Property Investment Options",
+      "itemListElement": [
+        {
+          "@type": "Service",
+          "name": "Buy-to-Let Investment",
+          "description": "Rental property investment with potential yields of 4-10%+ in Prague"
+        },
+        {
+          "@type": "Service",
+          "name": "Property Flipping",
+          "description": "Buy and sell future purchase contracts or renovate and sell apartments for quick capital gains"
+        },
+        {
+          "@type": "Service",
+          "name": "Speculative Investments",
+          "description": "Long-term property appreciation investment opportunities"
+        },
+        {
+          "@type": "Service",
+          "name": "Crowdfunded Projects",
+          "description": "Fractional investment in development projects with other investors"
+        },
+        {
+          "@type": "Service",
+          "name": "Mezzanine Financing",
+          "description": "Loan money for property development with fixed interest rates"
+        }
+      ]
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://isg-web.vercel.app/investment"
+    }
+  };
 
   const investmentOptions = [
     {
@@ -102,6 +180,12 @@ export default async function InvestmentPage() {
 
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body>
         <NextIntlClientProvider locale="en" messages={messages}>
           <Header />

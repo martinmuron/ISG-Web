@@ -10,12 +10,87 @@ import { Search, FileText, Handshake, Home, Eye, Headphones } from "lucide-react
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Prague Buyer&apos;s Agent for Expats | English Property Search | ISG",
-  description: "Expert buyer&apos;s agent services for expats in Prague. We find, negotiate & secure your perfect Czech property. English-speaking team. Fixed fees from 25,000 CZK.",
+  title: "Prague Buyer's Agent for Expats | English Property Search | ISG",
+  description: "Expert buyer's agent services for expats in Prague. We find, negotiate & secure your perfect Czech property. English-speaking team. Fixed fees from 25,000 CZK.",
+  keywords: "Prague buyer's agent, expat property search Prague, English speaking real estate agent Prague, Czech property buyer assistance, Prague apartment buying help, expat home buying Prague, international property services Prague, Prague property consultant expat",
+  openGraph: {
+    title: "Prague Buyer's Agent for Expats | English Property Search | ISG",
+    description: "Expert buyer's agent services for expats in Prague. We find, negotiate & secure your perfect Czech property. English-speaking team.",
+    url: '/buyers-agent',
+    images: [
+      {
+        url: '/images/services/buyers-agent.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Professional buyer\'s agent service for expats in Prague',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Prague Buyer's Agent for Expats | ISG",
+    description: "Expert buyer's agent services for expats in Prague. English-speaking team with fixed transparent fees.",
+    images: ['/images/services/buyers-agent.jpg'],
+  },
+  alternates: {
+    canonical: '/buyers-agent',
+  },
 };
 
 export default async function BuyersAgentPage() {
   const messages = await getMessages({ locale: 'en' });
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Buyer's Agent Services Prague",
+    "description": "Professional buyer's agent services for expats purchasing property in Prague and Czech Republic. English-speaking team with comprehensive property search, negotiation, and closing assistance.",
+    "provider": {
+      "@type": "Organization",
+      "name": "ISG Real Estate Prague",
+      "url": "https://isg-web.vercel.app"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Prague, Czech Republic"
+    },
+    "audience": {
+      "@type": "Audience",
+      "name": "Expats and English speakers"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceRange": "25000 CZK - 150000 CZK",
+      "priceCurrency": "CZK",
+      "availability": "https://schema.org/InStock"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Buyer's Agent Packages",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Basic Package",
+            "description": "Property search and viewing assistance"
+          },
+          "price": "25000",
+          "priceCurrency": "CZK"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Complete Package",
+            "description": "Full service from search to closing"
+          },
+          "price": "150000",
+          "priceCurrency": "CZK"
+        }
+      ]
+    }
+  };
 
   const services = [
     {
@@ -52,6 +127,12 @@ export default async function BuyersAgentPage() {
 
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body>
         <NextIntlClientProvider locale="en" messages={messages}>
           <Header />

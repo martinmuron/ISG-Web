@@ -11,10 +11,90 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sell Prague Property Fast | English-Speaking Real Estate Agent | ISG",
   description: "Sell your Prague property with English-speaking experts. Market analysis, professional staging, virtual tours. Competitive 2% + DPH fee. Free valuation for expats.",
+  keywords: "sell Prague property, Prague property sale expats, English speaking real estate agent Prague, sell apartment Prague, Prague property valuation, Czech property selling service, expat property sale Prague, Prague real estate agent English, sell house Prague, Prague property market analysis",
+  openGraph: {
+    title: "Sell Prague Property Fast | English-Speaking Real Estate Agent | ISG",
+    description: "Sell your Prague property with English-speaking experts. Market analysis, professional staging, virtual tours. Competitive 2% + DPH fee.",
+    url: '/selling-property',
+    images: [
+      {
+        url: '/images/services/selling-property.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Professional property selling services in Prague for expats',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Sell Prague Property Fast | English Real Estate Agent | ISG",
+    description: "Sell your Prague property with English-speaking experts. Competitive 2% + DPH fee with no hidden costs.",
+    images: ['/images/services/selling-property.jpg'],
+  },
+  alternates: {
+    canonical: '/selling-property',
+  },
 };
 
 export default async function SellingPropertyPage() {
   const messages = await getMessages({ locale: 'en' });
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Property Selling Services Prague",
+    "description": "Professional property selling services for expats in Prague and Czech Republic. Market analysis, staging, virtual tours, and legal documentation with competitive 2% + DPH fee.",
+    "provider": {
+      "@type": "Organization",
+      "name": "ISG Real Estate Prague",
+      "url": "https://isg-web.vercel.app"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Prague, Czech Republic"
+    },
+    "audience": {
+      "@type": "Audience",
+      "name": "Expats and English speakers"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "2% + DPH",
+      "priceCurrency": "CZK",
+      "description": "of the final sale price",
+      "availability": "https://schema.org/InStock"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Property Selling Services",
+      "itemListElement": [
+        {
+          "@type": "Service",
+          "name": "Market Analysis",
+          "description": "Comprehensive market analysis to determine optimal property pricing"
+        },
+        {
+          "@type": "Service",
+          "name": "Property Staging",
+          "description": "Professional staging to prepare your property and maximize sale potential"
+        },
+        {
+          "@type": "Service",
+          "name": "Virtual Tour Creation",
+          "description": "High-quality virtual tours and photography"
+        },
+        {
+          "@type": "Service",
+          "name": "Legal Documentation",
+          "description": "Complete handling of all contracts and legal paperwork"
+        }
+      ]
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://isg-web.vercel.app/selling-property"
+    }
+  };
 
   const services = [
     {
@@ -69,6 +149,12 @@ export default async function SellingPropertyPage() {
 
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body>
         <NextIntlClientProvider locale="en" messages={messages}>
           <Header />
