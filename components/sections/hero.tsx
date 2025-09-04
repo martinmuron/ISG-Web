@@ -49,7 +49,7 @@ export function Hero() {
             <Button
               size="lg"
               variant="outline"
-              className="border-white border-2 text-white hover:bg-white hover:text-brand px-8 py-3 backdrop-blur-sm"
+              className="border-white border-2 text-white hover:bg-white hover:text-brand px-8 py-3 bg-white/10 backdrop-blur-sm"
               onClick={() => scrollToSection("contact")}
             >
               {t("contactUs")}
