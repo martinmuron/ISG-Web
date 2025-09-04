@@ -333,8 +333,8 @@ export default async function InvestmentPage() {
               <div className="max-w-4xl mx-auto">
                 <div className="space-y-8">
                   {process.map((item, index) => (
-                    <div key={index} className="flex items-start space-x-6">
-                      <div className="flex-shrink-0">
+                    <div key={index} className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 text-center sm:text-left">
+                      <div className="flex-shrink-0 mx-auto sm:mx-0">
                         <div className="w-12 h-12 bg-brand-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
                           {item.step}
                         </div>
