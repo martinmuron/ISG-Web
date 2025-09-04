@@ -16,7 +16,9 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Home, CreditCard, Wrench, TrendingUp, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { HomeIcon, CalculatorIcon, PresentationIcon, ChartIcon } from "@/components/ui/custom-icons";
+import { BounceIn, FadeInUp } from "@/components/ui/scroll-animations";
 
 const newsletterSchema = z.object({
   email: z.string().email("Invalid email address"),
@@ -66,28 +68,28 @@ export function Services() {
 
   const services = [
     {
-      icon: Home,
+      icon: HomeIcon,
       title: t("realEstate.title"),
       description: t("realEstate.description"),
       color: "bg-brand-500",
       link: "/buyers-agent"
     },
     {
-      icon: CreditCard,
+      icon: CalculatorIcon,
       title: t("mortgages.title"),
       description: t("mortgages.description"),
       color: "bg-brand-600",
       link: "/finance"
     },
     {
-      icon: Wrench,
+      icon: PresentationIcon,
       title: t("construction.title"),
       description: t("construction.description"),
       color: "bg-brand-700",
       link: "/construction"
     },
     {
-      icon: TrendingUp,
+      icon: ChartIcon,
       title: t("investment.title"),
       description: t("investment.description"),
       color: "bg-brand-800",
@@ -112,35 +114,39 @@ export function Services() {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <Card key={index} className="bg-white hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <div className="flex items-start space-x-4 mb-4">
-                    <div className={`${service.color} rounded-lg p-3 shrink-0`}>
-                      <IconComponent className="h-6 w-6 text-white" />
+              <FadeInUp key={index} delay={index * 200} duration={800}>
+                <Card className="bg-white hover:shadow-lg transition-shadow duration-300">
+                  <CardContent className="p-8">
+                    <div className="flex items-start space-x-4 mb-4">
+                      <BounceIn delay={index * 200 + 400} duration={1000}>
+                        <div className={`${service.color} rounded-lg p-3 shrink-0`}>
+                          <IconComponent className="h-6 w-6 text-white" />
+                        </div>
+                      </BounceIn>
+                      <div className="space-y-2 flex-1">
+                        <h3 className="text-xl font-semibold text-slate-900">
+                          {service.title}
+                        </h3>
+                        <p className="text-slate-600 leading-relaxed">
+                          {service.description}
+                        </p>
+                      </div>
                     </div>
-                    <div className="space-y-2 flex-1">
-                      <h3 className="text-xl font-semibold text-slate-900">
-                        {service.title}
-                      </h3>
-                      <p className="text-slate-600 leading-relaxed">
-                        {service.description}
-                      </p>
+                    <div className="flex justify-end">
+                      <Link href={service.link}>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="border-brand text-brand hover:bg-brand hover:text-white transition-colors"
+                        >
+                          Learn More
+                          <ArrowRight className="h-4 w-4 ml-2" />
+                        </Button>
+                      </Link>
                     </div>
-                  </div>
-                  <div className="flex justify-end">
-                    <Link href={service.link}>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="border-brand text-brand hover:bg-brand hover:text-white transition-colors"
-                      >
-                        Learn More
-                        <ArrowRight className="h-4 w-4 ml-2" />
-                      </Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </FadeInUp>
             );
           })}
         </div>
