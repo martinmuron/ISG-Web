@@ -1,17 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Logo } from "@/components/ui/logo";
 import Link from "next/link";
 
 export function Footer() {
   const t = useTranslations("footer");
   const navT = useTranslations("navigation");
-  const [email, setEmail] = useState("");
-
   const navigation = [
     { name: navT("home"), href: "/" },
     { name: navT("about"), href: "/#about" },
@@ -26,17 +21,11 @@ export function Footer() {
     { name: navT("investment"), href: "/investment" },
   ];
 
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Newsletter subscription:", email);
-    setEmail("");
-  };
-
 
   return (
     <footer className="bg-slate-900 text-white">
       <div className="container px-4 md:px-6 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <Logo className="h-8 w-auto text-white" />
@@ -82,65 +71,6 @@ export function Footer() {
             </nav>
           </div>
 
-          {/* Social Media & Contact */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">{t("socialMedia")}</h3>
-            <div className="space-y-2">
-              <a 
-                href="https://www.facebook.com/ISGInvest" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-sm text-slate-300 hover:text-white transition-colors"
-              >
-                Facebook
-              </a>
-              <a 
-                href="https://www.linkedin.com/company/isg-invest" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-sm text-slate-300 hover:text-white transition-colors"
-              >
-                LinkedIn
-              </a>
-              <a 
-                href="https://www.instagram.com/isginvest" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-sm text-slate-300 hover:text-white transition-colors"
-              >
-                Instagram
-              </a>
-              <a 
-                href="https://wa.me/420732554956" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-sm text-slate-300 hover:text-white transition-colors"
-              >
-                WhatsApp: +420 732 554 956
-              </a>
-            </div>
-          </div>
-
-          {/* Newsletter */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">{t("newsletter")}</h3>
-            <form onSubmit={handleNewsletterSubmit} className="space-y-2">
-              <Input
-                type="email"
-                placeholder={t("emailPlaceholder")}
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="bg-slate-800 border-slate-700 text-white placeholder-slate-400"
-              />
-              <Button 
-                type="submit" 
-                size="sm" 
-                className="w-full bg-white text-slate-900 hover:bg-slate-100"
-              >
-                {t("subscribeButton")}
-              </Button>
-            </form>
-          </div>
         </div>
 
         <div className="border-t border-slate-800 mt-12 pt-8">
