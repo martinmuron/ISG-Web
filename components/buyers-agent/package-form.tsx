@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -18,8 +18,13 @@ export function PackageForm({ packageName, onClose, isVisible }: PackageFormProp
     name: "", 
     email: "", 
     phone: "", 
-    package: packageName 
+    package: "" 
   });
+
+  // Update the package name when the prop changes
+  useEffect(() => {
+    setFormData(prev => ({ ...prev, package: packageName }));
+  }, [packageName]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(null);
 
