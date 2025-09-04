@@ -136,6 +136,11 @@ export function Contact() {
                   <p className="text-xs text-slate-500">With ISG since 2008</p>
                 </div>
                 
+                <div className="bg-slate-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-slate-900">Dominika</h4>
+                  <p className="text-sm text-brand-600 mb-1">Property & Sales Manager</p>
+                  <p className="text-xs text-slate-500">Joined 2017</p>
+                </div>
                 
                 <div className="bg-slate-50 rounded-lg p-4">
                   <h4 className="font-semibold text-slate-900">Robin</h4>
