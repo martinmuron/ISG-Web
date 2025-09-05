@@ -385,8 +385,7 @@ export default async function SellingPropertyPage() {
                         style={{
                           width: '100%',
                           height: '100%',
-                          border: 'none',
-                          minHeight: '400px'
+                          border: 'none'
                         }}
                         src="https://www.youtube.com/embed/82a5Ftp6CSM"
                         title="Why should you work with us? | Czech Real Estate | Nick from ISG"

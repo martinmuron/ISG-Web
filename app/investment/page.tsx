@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, TrendingUp, Home, RefreshCw, Users, Building, DollarSign, Shield } from "lucide-react";
-import { FadeInUp, BounceIn, FadeInLeft, FadeInRight } from "@/components/ui/scroll-animations";
+import { FadeInUp, BounceIn } from "@/components/ui/scroll-animations";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
