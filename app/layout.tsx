@@ -15,6 +15,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -24,10 +31,10 @@ export const metadata: Metadata = {
     siteName: 'ISG Real Estate Prague',
     images: [
       {
-        url: '/images/hero/prague-skyline.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Prague Real Estate - Beautiful Prague skyline and properties',
+        url: '/images/hero/prague_isg.webp',
+        width: 1920,
+        height: 1080,
+        alt: 'Prague Real Estate - Beautiful Prague skyline with Charles Bridge and Prague Castle',
       },
     ],
   },
@@ -35,7 +42,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Prague Real Estate for Expats | ISG',
     description: "Prague's #1 English-speaking real estate agency for expats. 15+ years serving international clients.",
-    images: ['/images/hero/prague-skyline.jpg'],
+    images: ['/images/hero/prague_isg.webp'],
   },
   verification: {
     google: 'verification-code-here',
@@ -90,7 +97,7 @@ export default async function RootLayout({
         "@type": "LocalBusiness",
         "@id": "https://isg-web.vercel.app/#business",
         "name": "ISG Real Estate Prague",
-        "image": "https://isg-web.vercel.app/images/hero/prague-skyline.jpg",
+        "image": "https://isg-web.vercel.app/images/hero/prague_isg.webp",
         "description": "Expert real estate services for expats in Prague and Czech Republic. English-speaking agents with 15+ years experience in property buying, selling, financing, and management.",
         "url": "https://isg-web.vercel.app",
         "priceRange": "$$$",
