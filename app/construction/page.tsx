@@ -416,7 +416,7 @@ export default async function ConstructionPage() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-white text-white hover:bg-white hover:text-brand-500 px-8 py-3"
+                    className="bg-transparent border-white text-white hover:bg-white hover:text-brand-500 px-8 py-3"
                   >
                     Call +420 736 535 556
                   </Button>
