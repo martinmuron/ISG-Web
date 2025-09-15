@@ -149,16 +149,13 @@ export default async function SellingPropertyPage() {
   ];
 
   return (
-    <html lang="en">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-      </head>
-      <body>
-        <NextIntlClientProvider locale="en" messages={messages}>
-          <Header />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <NextIntlClientProvider locale="en" messages={messages}>
+        <Header />
           
           <main>
             {/* Hero Section */}
@@ -550,7 +547,6 @@ export default async function SellingPropertyPage() {
 
           <Footer />
         </NextIntlClientProvider>
-      </body>
-    </html>
+    </>
   );
 }

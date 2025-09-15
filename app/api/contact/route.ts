@@ -9,7 +9,7 @@ const contactSchema = z.object({
   message: z.string().min(1, 'Message is required'),
 });
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY || 'placeholder-key-for-build');
 
 export async function POST(request: NextRequest) {
   try {

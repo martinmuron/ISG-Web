@@ -180,18 +180,15 @@ export default async function InvestmentPage() {
   ];
 
   return (
-    <html lang="en">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-      </head>
-      <body>
-        <NextIntlClientProvider locale="en" messages={messages}>
-          <Header />
-          
-          <main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <NextIntlClientProvider locale="en" messages={messages}>
+        <Header />
+
+        <main>
             {/* Hero Section */}
             <section className="py-16 sm:py-20 lg:py-32 bg-gradient-to-br from-brand-50 to-brand-100">
             <div className="container px-4 md:px-6">
@@ -480,11 +477,10 @@ export default async function InvestmentPage() {
               </div>
             </div>
           </section>
-          </main>
+        </main>
 
-          <Footer />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+        <Footer />
+      </NextIntlClientProvider>
+    </>
   );
 }

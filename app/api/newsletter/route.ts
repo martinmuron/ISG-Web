@@ -6,7 +6,7 @@ const newsletterSchema = z.object({
   email: z.string().email('Invalid email address'),
 });
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY || 'placeholder-key-for-build');
 
 export async function POST(request: NextRequest) {
   try {
